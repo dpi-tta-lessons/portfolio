@@ -38,7 +38,7 @@ Open the same Codespace you used in the GitHub + Codespaces lesson. You can acce
 
 <!-- Create a new file inside your project folder: -->
 
-Open the `index.html` file we created in <a href="" target="_blank">Getting Started with GitHub Codespaces</a> and get ready to the HTML and CSS we need for your portfolio.
+Open the `index.html` file we created in <a href="" target="_blank">Getting Started with GitHub Codespaces</a> and get ready to write the HTML and CSS we need for your portfolio.
 
 <!-- TODO
 
