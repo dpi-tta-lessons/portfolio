@@ -23,7 +23,7 @@ Open the same Codespace you used in the GitHub + Codespaces lesson. You can acce
 <!-- TODO: show how to access from the repo you created -->
 
 <aside class="warning">
-  If you haven’t set up a Codespace before, start with these lessons first.
+  If you haven’t set up a Codespace before, start with these lessons first:
   <ul>
     <li>
       <!-- TODO: set link via slug -->
