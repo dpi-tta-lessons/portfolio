@@ -17,14 +17,26 @@ In this lesson, you'll build a personal web page using HTML and CSS inside a Git
 
 ## 1. Use Your Codespace
 
-<!-- TODO: link to lesson here -->
+<!-- TODO: show how to access codespaces in GitHub (screenshots)  -->
 Open the same Codespace you used in the GitHub + Codespaces lesson. You can access your codespaces here [https://github.com/codespaces](https://github.com/codespaces).
 
-<!-- TODO: show how to access codespaces in GitHub (screenshots) -->
+<aside class="warning">
+  If you haven’t set up a Codespace before, start with these lessons first.
+  <ul>
+    <li>
+      <!-- TODO: set link via slug -->
+      <a href="" target="_blank">HTML & CSS Basics</a>
+    </li>
+    <li>
+      <!-- TODO: set link via slug -->
+      <a href="" target="_blank">Getting Started with GitHub Codespaces</a>
+    </li>
+  </ul>
+</aside>
 
 <!-- Create a new file inside your project folder: -->
 
-Open `index.html` and get ready to write your HTML.
+Open the `index.html` file we created in <a href="" target="_blank">Getting Started with GitHub Codespaces</a> and get ready to the HTML and CSS we need for your portfolio.
 
 <!-- TODO
 
@@ -42,7 +54,17 @@ pages/
 
 -->
 
-<!-- TODO: How to view source in Chrome -->
+<aside class="tip">
+  In Chrome, right-click anywhere on a webpage and choose <code>View Page Source</code>. This helps you learn how other websites are built!
+
+  Keyboard Shortcut:
+  <ul>
+    <li>Ctrl + U (Windows)</li>
+    <li>Command ⌘ + Option ⌥ + U (Mac)</li>
+  </ul>
+</aside>
+
+<!-- TODO: How to use inspector? -->
 
 ## 2. Gather Your Content
 
@@ -120,7 +142,6 @@ Add this basic structure to your body:
 <main>
   <h2>Links</h2>
   <ul>
-    <!-- TODO: Add Icons -->
     <li>
       <a href="https://www.linkedin.com/in/ianheraty/" target="_blank">
         LinkedIn
@@ -155,6 +176,9 @@ note on renaming and using standard / consistent casing in images
 this makes it easier for us 
 
 -->
+<aside class="tip">
+  Use all lowercase kebab-case for filenames (eg my-avatar.jpg) to avoid broken links and stay consistent across platforms.
+</aside>
 
 <!-- TODO: start with <style> tags in the <head> 
 
@@ -193,7 +217,16 @@ box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 
 ## 7. Make It Responsive
 
-<!-- TODO: explain why responsive is important. mobile first. how to use the inspector mobile view -->
+Most people will view your site on their phones. Responsive design ensures it looks good on all screen sizes.
+
+<!-- TODO:
+
+Using DevTools “Toggle device toolbar”
+Explaining the viewport meta tag
+Avoiding fixed widths (width: 500px) in favor of percentages or max-width
+
+-->
+
 In the `<head>`, make sure this tag is present:
 
 ```html
@@ -240,23 +273,35 @@ To make your page look great when shared, use MetaTags.io to generate a preview 
 
 <!-- TODO: add screenshot -->
 
-<!-- TOOD: add practical meta tag examples -->
+<!-- TOOD: add practical meta tag examples 
+
+<meta property="og:title" content="Ian Heraty's Portfolio">
+<meta property="og:image" content="/assets/avatar.jpg">
+<meta property="og:description" content="Software Development Educator and Mentor">
+<meta property="og:url" content="https://yourdomain.com">
+
+-->
 
 ## 10. Validate Your HTML
 
-Use the W3C Validator to check your code for mistakes.
+Use the [W3C Validator](https://validator.w3.org/) to check your code for mistakes. Paste your HTML code or upload the file to check for typos or unclosed tags.
 
-<!-- TODO: link -->
+<!-- TODO
 
-<!-- TODO: mention that codespaces shut down after 30 minutes of inactivity. need to make it available 24/7 -->
+add aside on indents and formatting to improve readability 
 
-<!-- TODO: add aside on indents and formatting to improve readability -->
+maybe do this in a subsequent "code review" lesson?
 
-<!-- TODO: add aside on using vs code format document cmd + shift + p and type "Format document" -->
+In VS Code, use Cmd+Shift+P (Mac) or Ctrl+Shift+P (Windows), then search “Format Document” to clean up your HTML or CSS automatically.
+-->
 
 ## What’s Next?
 
 You now have a static site ready to deploy!
+
+<aside class="danger">
+  ⚠️ Codespaces shut down after ~30 minutes of inactivity. In the next lesson, you'll learn how to deploy your site so it's available 24/7.
+</aside>
 
 In the next lesson, you’ll:
 
