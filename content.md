@@ -20,6 +20,8 @@ In this lesson, you'll build a personal web page using HTML and CSS inside a Git
 <!-- TODO: show how to access codespaces in GitHub (screenshots)  -->
 Open the same Codespace you used in the GitHub + Codespaces lesson. You can access your codespaces here [https://github.com/codespaces](https://github.com/codespaces).
 
+<!-- TODO: show how to access from the repo you created -->
+
 <aside class="warning">
   If you haven’t set up a Codespace before, start with these lessons first.
   <ul>
