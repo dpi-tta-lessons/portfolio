@@ -2,6 +2,8 @@
 
 Create a personal portfolio webpage to showcase your work and make it easy for others to find your projects online.
 
+<!-- TODO: screenshot of completed portfolio -->
+
 ## Why You Need a Portfolio
 
 As a developer, having a portfolio gives you a space to:
