@@ -40,24 +40,9 @@ Open the same Codespace you used in the GitHub + Codespaces lesson. You can acce
 
 Open the `index.html` file we created in <a href="" target="_blank">Getting Started with GitHub Codespaces</a> and get ready to write the HTML and CSS we need for your portfolio.
 
-<!-- TODO
-
-https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Environment_setup/Dealing_with_files#what_structure_should_a_website_have
-
-The root directory is where the main HTML files, such as index.html, are stored.
- Additionally, it is common to have a dedicated folder for static assets like images, stylesheets, and JavaScript files.
- This helps keep the project organized and makes it easier to manage and scale the website as it grows. For a basic static website, having all HTML pages in the same root directory might work, but as the site becomes more complex, organizing pages into subdirectories can improve manageability.
-
-/
-index.html
-images/
-styles/
-pages/
-
--->
-
+<!-- TODO: add video demo -->
 <aside class="tip">
-  In Chrome, right-click anywhere on a webpage and choose <code>View Page Source</code>. This helps you learn how other websites are built!
+  <p>In Chrome, right-click anywhere on a webpage and choose <code>View Page Source</code>. This helps you learn how other websites are built!</p>
 
   Keyboard Shortcut:
   <ul>
@@ -78,7 +63,6 @@ You'll need:
 
 ## 3. Start with the HTML Boilerplate
 
-<!-- TODO: break this down. what is each element doing? -->
 Here's a complete basic layout:
 
 ```html
@@ -97,7 +81,7 @@ Here's a complete basic layout:
 ```
 {: .repl }
 
-Create a new `style.css` file next to your HTML file.
+<!-- TODO: break this down. what is each element doing? -->
 
 ## 4. Add a Debug Border
 
@@ -118,7 +102,7 @@ To visualize layout areas, add this to your CSS:
 </style>
 
 <div>
-  <p>Notice how this element is wrapped in a border</p>
+  <p>Notice how each element box is wrapped in a border</p>
 </div>
 ```
 {: .repl }
@@ -187,7 +171,9 @@ this makes it easier for us
 then refactor and move to `styles/application.css`
 
 -->
-## 6. Clean Styling in `style.css`
+## 6. Clean Styling
+
+<!-- TODO: break this down -->
 
 ```css
 body {
@@ -235,6 +221,9 @@ In the `<head>`, make sure this tag is present:
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 {: .copyable }
+
+<!-- TODO: explain viewport -->
+
 
 <!-- TODO: explain -->
 Use relative units (em, %) in your styles and avoid fixed pixel widths when possible.
@@ -284,6 +273,24 @@ To make your page look great when shared, use MetaTags.io to generate a preview 
 
 -->
 
+<!-- TODO: Create a new `style.css` file next to your HTML file. -->
+
+<!-- TODO
+
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Environment_setup/Dealing_with_files#what_structure_should_a_website_have
+
+The root directory is where the main HTML files, such as index.html, are stored.
+ Additionally, it is common to have a dedicated folder for static assets like images, stylesheets, and JavaScript files.
+ This helps keep the project organized and makes it easier to manage and scale the website as it grows. For a basic static website, having all HTML pages in the same root directory might work, but as the site becomes more complex, organizing pages into subdirectories can improve manageability.
+
+/
+index.html
+images/
+styles/
+pages/
+
+-->
+
 ## 10. Validate Your HTML
 
 Use the [W3C Validator](https://validator.w3.org/) to check your code for mistakes. Paste your HTML code or upload the file to check for typos or unclosed tags.
@@ -305,11 +312,12 @@ You now have a static site ready to deploy!
   ⚠️ Codespaces shut down after ~30 minutes of inactivity. In the next lesson, you'll learn how to deploy your site so it's available 24/7.
 </aside>
 
-In the next lesson, you’ll:
+In the next lessons, you’ll:
 
 - Host your page online
 - Make it available 24/7
-- Connect a custom domain
+- Get your first "code review"
+- Connect a custom domain (optional)
 
 ## Practice Challenge
 
