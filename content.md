@@ -42,6 +42,8 @@ pages/
 
 -->
 
+<!-- TODO: How to view source in Chrome -->
+
 ## 2. Gather Your Content
 
 You'll need:
@@ -52,6 +54,7 @@ You'll need:
 
 ## 3. Start with the HTML Boilerplate
 
+<!-- TODO: break this down. what is each element doing? -->
 Here's a complete basic layout:
 
 ```html
@@ -60,7 +63,7 @@ Here's a complete basic layout:
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name</title>
+    <title>Ian Heraty</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -76,11 +79,23 @@ Create a new `style.css` file next to your HTML file.
 
 To visualize layout areas, add this to your CSS:
 
-<!-- TODO: copyable + example -->
 ```css
 * {
   border: 1px solid red;
 }
+```
+{: .copyable }
+
+```html
+<style>
+* {
+  border: 1px solid red;
+}
+</style>
+
+<div>
+  <p>Notice how this element is wrapped in a border</p>
+</div>
 ```
 {: .repl }
 
@@ -92,17 +107,32 @@ Add this basic structure to your body:
 
 ```html
 <header>
-  <img src="your-avatar.jpg" alt="Your Name">
-  <h1>Your Name</h1>
-  <p>Web Developer</p>
+  <img src="assets/avatar.jpg" alt="Ian Heraty">
+  <h1>Ian Heraty</h1>
+  <p>
+    Software Development Educator at Discovery Partners Institute. Ian is a technical instructor who helps trainees master full stack web development in preparation for technology roles. Before joining Discovery Partners Institute, Ian worked for several years as a software developer and digital consultant. Following a successful career in custom software development and digital consulting, Ian now guides trainees in building robust web applications and developing industry-ready skills. Ian enjoys music, tennis, and exploring new technologies.
+  <p>
 </header>
 
 <main>
-  <h2>Projects</h2>
+  <h2>Links</h2>
   <ul>
-    <!-- TODO: change links -->
-    <li><a href="https://github.com/yourname/project1" target="_blank">Project One</a></li>
-    <li><a href="https://github.com/yourname/project2" target="_blank">Project Two</a></li>
+    <!-- TODO: Add Icons -->
+    <li>
+      <a href="https://www.linkedin.com/in/ianheraty/" target="_blank">
+        LinkedIn
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/heratyian" target="_blank">
+        GitHub
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/@dpi-tta" target="_blank">
+        Tech Talent Accelerator YouTube Page
+      </a>
+    </li>
   </ul>
 </main>
 ```
@@ -117,7 +147,6 @@ note on renaming and using standard / consistent casing in images
 this makes it easier for us 
 
 -->
-
 
 <!-- TODO: start with <style> tags in the <head> 
 
@@ -142,7 +171,7 @@ img {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 ```
-{: .repl }
+{: .copyable }
 
 ### Common CSS Properties
 
@@ -212,6 +241,10 @@ Use the W3C Validator to check your code for mistakes.
 <!-- TODO: link -->
 
 <!-- TODO: mention that codespaces shut down after 30 minutes of inactivity. need to make it available 24/7 -->
+
+<!-- TODO: add aside on indents and formatting to improve readability -->
+
+<!-- TODO: add aside on using vs code format document cmd + shift + p and type "Format document" -->
 
 ## What’s Next?
 
