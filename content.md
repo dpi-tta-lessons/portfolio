@@ -13,7 +13,7 @@ As a developer, having a portfolio gives you a space to:
 
 In this lesson, you'll build a personal web page using HTML and CSS inside a GitHub Codespace.
 
-## Use Your Codespace
+## 1. Use Your Codespace
 
 <!-- TODO: link to lesson here -->
 Open the same Codespace you used in the GitHub + Codespaces lesson. You can access your codespaces here [https://github.com/codespaces](https://github.com/codespaces).
@@ -40,7 +40,7 @@ pages/
 
 -->
 
-## Gather Your Content
+## 2. Gather Your Content
 
 You'll need:
 
@@ -48,7 +48,7 @@ You'll need:
 - A short bio or tagline
 - Links to projects or social media (+ images or icons)
 
-## Start with the HTML Boilerplate
+## 3. Start with the HTML Boilerplate
 
 Here's a complete basic layout:
 
@@ -70,7 +70,7 @@ Here's a complete basic layout:
 
 Create a new `style.css` file next to your HTML file.
 
-## Add a Debug Border
+## 4. Add a Debug Border
 
 To visualize layout areas, add this to your CSS:
 
@@ -84,7 +84,7 @@ To visualize layout areas, add this to your CSS:
 
 You can remove this later once layout looks good.
 
-## Build the Page Layout
+## 5. Build the Page Layout
 
 Add this basic structure to your body:
 
@@ -122,7 +122,7 @@ this makes it easier for us
 then refactor and move to `styles/application.css`
 
 -->
-## Clean Styling in `style.css`
+## 6. Clean Styling in `style.css`
 
 ```css
 body {
@@ -142,7 +142,17 @@ img {
 ```
 {: .repl }
 
-## Make It Responsive
+### Common CSS Properties
+
+<!-- TODO: break this up and explain (using practical examples for each: margin, padding, border-radius, box-shadow) -->
+```css
+margin: auto;
+padding: 1rem;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+```
+
+## 7. Make It Responsive
 
 <!-- TODO: explain why responsive is important. mobile first. how to use the inspector mobile view -->
 In the `<head>`, make sure this tag is present:
@@ -155,17 +165,7 @@ In the `<head>`, make sure this tag is present:
 <!-- TODO: explain -->
 Use relative units (em, %) in your styles and avoid fixed pixel widths when possible.
 
-## Common CSS Properties
-
-<!-- TODO: break this up and explain (using practical examples for each: margin, padding, border-radius, box-shadow) -->
-```css
-margin: auto;
-padding: 1rem;
-border-radius: 8px;
-box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-```
-
-## Use Font Awesome Icons
+## 8. Use Font Awesome Icons
 
 Add this to your `<head>`:
 
@@ -189,7 +189,7 @@ Now you can use icons like:
 ```
 {: .repl}
 
-## Meta Tags for Link Previews
+## 9. Make Your Link Previews Stand Out
 
 <!-- TODO: make port public to use on metatags io. (does this work?) -->
 
@@ -203,12 +203,11 @@ To make your page look great when shared, use MetaTags.io to generate a preview 
 
 <!-- TOOD: add practical meta tag examples -->
 
-## Validate Your HTML
+## 10. Validate Your HTML
 
 Use the W3C Validator to check your code for mistakes.
 
 <!-- TODO: link -->
-
 
 <!-- TODO: mention that codespaces shut down after 30 minutes of inactivity. need to make it available 24/7 -->
 
