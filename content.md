@@ -110,7 +110,7 @@ Add this basic structure to your body:
   <img src="assets/avatar.jpg" alt="Ian Heraty">
   <h1>Ian Heraty</h1>
   <h3>
-    Software Development Educator at Discovery Partners Institute.
+    Software Development Educator at Discovery Partners Institute
   </h3>
   <p>
     Ian is a technical instructor who helps trainees master full stack web development in preparation for technology roles. Before joining Discovery Partners Institute, Ian worked for several years as a software developer and digital consultant. Following a successful career in custom software development and digital consulting, Ian now guides trainees in building robust web applications and developing industry-ready skills. Ian enjoys music, tennis, and exploring new technologies.
