@@ -148,34 +148,7 @@ Sets the text that appears in the browser tab.
 
 This is the visible part of your site — everything inside the `<body>` tags show up in the browser window.
 
-<!-- TODO: move this somewhere later? -->
-## 4. Add a Debug Border
-
-To visualize layout areas, add this to your CSS:
-
-```css
-* {
-  border: 1px solid red;
-}
-```
-{: .copyable }
-
-```html
-<style>
-* {
-  border: 1px solid red;
-}
-</style>
-
-<div>
-  <p>Notice how each element box is wrapped in a border</p>
-</div>
-```
-{: .repl }
-
-You can remove this later once layout looks good.
-
-## 5. Build the Page Layout
+## 4. Build the Page Layout
 
 Add this basic structure to your body:
 
@@ -261,7 +234,7 @@ Add this basic structure to your body:
 </aside>
 
 <!-- TODO: start with inline styles, then <style> tags (with element/id/class selectors), then css stylesheet -->
-## 6. Clean Styling
+## 5. Styling
 
 <!-- TODO: break this down -->
 
@@ -293,7 +266,33 @@ border-radius: 8px;
 box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 ```
 
-## 7. Make It Responsive
+### Add a Debug Border
+
+To visualize layout areas, add this to your CSS:
+
+```css
+* {
+  border: 1px solid red;
+}
+```
+{: .copyable }
+
+```html
+<style>
+* {
+  border: 1px solid red;
+}
+</style>
+
+<div>
+  <p>Notice how each element box is wrapped in a border</p>
+</div>
+```
+{: .repl }
+
+You can remove this later once layout looks good.
+
+## 6. Make It Responsive
 
 Most people will view your site on their phones. Responsive design ensures it looks good on all screen sizes.
 
@@ -317,7 +316,7 @@ In the `<head>`, make sure this tag is present:
 <!-- TODO: explain -->
 Use relative units (em, %) in your styles and avoid fixed pixel widths when possible.
 
-## 8. Use Font Awesome Icons
+## 7. Use Font Awesome Icons
 
 Add this to your `<head>`:
 
@@ -341,7 +340,7 @@ Now you can use icons like:
 ```
 {: .repl}
 
-## 9. Make Your Link Previews Stand Out
+## 8. Make Your Link Previews Stand Out
 
 <!-- TODO: make port public to use on metatags io. (does this work?) -->
 
@@ -380,7 +379,7 @@ pages/
 
 -->
 
-## 10. Validate Your HTML
+## 9. Validate Your HTML
 
 Use the [W3C Validator](https://validator.w3.org/) to check your code for mistakes. Paste your HTML code or upload the file to check for typos or unclosed tags.
 
