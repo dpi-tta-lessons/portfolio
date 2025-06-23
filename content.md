@@ -70,7 +70,7 @@ Here's a complete basic layout:
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Ian Heraty</title>
+    <title>Your Title Goes Here</title>
   </head>
   <body>
     <!-- Your content goes here -->
@@ -81,10 +81,6 @@ Here's a complete basic layout:
 
 <aside class="tip">
   You wont see anything rendered when you click `run` because we haven't added any content inside the <code>body</code>.
-</aside>
-
-<aside class="tip">
-  Notice how we use indents to indicate nesting. This helps us humans read the code and more easily identify bugs.
 </aside>
 
 ### What Each Line Does
@@ -104,7 +100,7 @@ Declares that this file uses HTML5 — the current standard.
 ```
 Starts the HTML document. The `lang="en"` tells browsers (and screen readers) that the content is in English.
 
-#### `<head>`
+#### Head
 
 ```html
 <head>
@@ -133,7 +129,7 @@ Makes sure your page can display all types of characters — symbols, emojis, ac
 #### Title
 
 ```html
-<title>Ian Heraty</title>
+<title>Your Title Goes Here</title>
 ```
 
 Sets the text that appears in the browser tab.
@@ -152,6 +148,7 @@ Sets the text that appears in the browser tab.
 
 This is the visible part of your site — everything inside the `<body>` tags show up in the browser window.
 
+<!-- TODO: move this somewhere later? -->
 ## 4. Add a Debug Border
 
 To visualize layout areas, add this to your CSS:
@@ -221,6 +218,10 @@ Add this basic structure to your body:
 </main>
 ```
 {: .repl }
+
+<aside class="tip">
+  Notice how we use indents to indicate nesting. This helps us humans read the code and more easily identify bugs.
+</aside>
 
 <!-- TODO: adding images -->
 
