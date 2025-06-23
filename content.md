@@ -219,7 +219,7 @@ Add this basic structure to your body:
   </section>
 
   <section>
-    <h3>Posts</h3>
+    <h3>Blog Posts</h3>
     <ul id="blog-posts">
       <li>
         <a href="https://paulgraham.com/startupideas.html" target="_blank">
