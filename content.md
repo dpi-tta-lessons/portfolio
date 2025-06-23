@@ -83,6 +83,8 @@ Here's a complete basic layout:
   You wont see anything rendered when you click `run` because we haven't added any content inside the <code>body</code>.
 </aside>
 
+Add this layout to your `index.html` file. We'll add content to the body in the [next step](#4-build-the-page-layout).
+
 ### What Each Line Does
 
 #### Doctype
@@ -235,6 +237,8 @@ Add this basic structure to your body:
 
 <!-- TODO: start with inline styles, then <style> tags (with element/id/class selectors), then css stylesheet -->
 ## 5. Styling
+
+Now that we have the basic html layout in place, we can begin adding style.
 
 <!-- TODO: break this down -->
 
