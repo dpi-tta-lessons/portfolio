@@ -95,7 +95,7 @@ Here's a complete basic layout:
   You wont see anything rendered when you click `run` because we haven't added any content inside the <code>body</code>.
 </aside>
 
-Add this layout to your `index.html` file. We'll add content to the body in the [next step](#4-build-the-page-layout).
+Replace your `<h1>Hello, world</h1>` with this layout in your `index.html` file. We'll add content to the body in the [next step](#4-build-the-page-layout).
 
 ### What Each Line Does
 
@@ -152,7 +152,7 @@ Sets the text that appears in the browser tab.
   Make sure to change this to something relevant for your website. 😄
 </aside>
 
-<!-- TODO: add screenshot -->
+![title in tab](assets/title-tab.png)
 
 #### Body
 
@@ -164,7 +164,7 @@ This is the visible part of your site — everything inside the `<body>` tags sh
 
 ## 4. Build the Page Layout
 
-Add this basic structure to your body:
+Add this basic structure to your body, replacing the `<!-- Your content goes here -->` comment.
 
 ```html
 <header>
@@ -246,6 +246,20 @@ Add this basic structure to your body:
 <aside class="tip">
   Use all lowercase kebab-case for filenames (eg my-avatar.jpg) to avoid broken links and stay consistent across platforms. Even though we can technically use any casing, it's a good practice to follow a convention and be consistent.
 </aside>
+
+![basic page layout](assets/basic-layout.png)
+
+### Missing Image Icon
+
+`<img src="assets/avatar.jpg" alt="Portrait of Ian Heraty">`
+
+![broken image icon](assets/broken-image-icon.png)
+
+You will likely notice a 'broken image icon' after pasting in the basic layout code. This happens when the browser can not find the image at the given path. When this happens the browser falls back to the value set to `alt`, in our case `"Portrait of Ian Heraty"`.
+
+Let's add our image to the project so we can fix this broken image. A standard practice is to have an `assets` folder for images, stylesheets, and scripts needed to run our app.
+
+<video src="assets/fix-broken-image.mp4" autoplay loop muted playsinline></video>
 
 <!-- TODO: start with inline styles, then <style> tags (with element/id/class selectors), then css stylesheet -->
 ## 5. Styling
