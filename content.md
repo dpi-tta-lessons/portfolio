@@ -181,49 +181,53 @@ Add this basic structure to your body:
 
 ```html
 <header>
-  <img src="assets/avatar.jpg" alt="Ian Heraty">
+  <img src="assets/avatar.jpg" alt="Portrait of Ian Heraty">
   <h1>Ian Heraty</h1>
   <h3>
     Software Development Educator at Discovery Partners Institute
   </h3>
   <p>
     Ian is a technical instructor who helps trainees master full stack web development in preparation for technology roles. Before joining Discovery Partners Institute, Ian worked for several years as a software developer and digital consultant. Following a successful career in custom software development and digital consulting, Ian now guides trainees in building robust web applications and developing industry-ready skills. Ian enjoys music, tennis, and exploring new technologies.
-  <p>
+  </p>
 </header>
 
 <main>
-  <ul id="social-links">
+  <section>
     <h3>Social Links</h3>
-    <li>
-      <a href="https://www.linkedin.com/in/ianheraty/" target="_blank">
-        LinkedIn
-      </a>
-    </li>
-    <li>
-      <a href="https://github.com/heratyian" target="_blank">
-        GitHub
-      </a>
-    </li>
-    <li>
-      <a href="https://www.youtube.com/@dpi-tta" target="_blank">
-        Tech Talent Accelerator YouTube Page
-      </a>
-    </li>
-    <li>
-      <a href="mailto:ihera2@uillinois.edu" target="_blank">
-        Email
-      </a>
-    </li>
-  </ul>
+    <ul id="social-links">
+      <li>
+        <a href="https://www.linkedin.com/in/ianheraty/" target="_blank">
+          LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/heratyian" target="_blank">
+          GitHub
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/@dpi-tta" target="_blank">
+          Tech Talent Accelerator YouTube Page
+        </a>
+      </li>
+      <li>
+        <a href="mailto:ihera2@uillinois.edu" target="_blank">
+          Email
+        </a>
+      </li>
+    </ul>
+  </section>
 
-  <ul id="posts">
+  <section>
     <h3>Posts</h3>
-    <li>
-      <a href="https://paulgraham.com/startupideas.html" target="_blank">
-        How to Get Startup Ideas
-      </a>
-    </li>
-  </ul>
+    <ul id="blog-posts">
+      <li>
+        <a href="https://paulgraham.com/startupideas.html" target="_blank">
+          How to Get Startup Ideas
+        </a>
+      </li>
+    </ul>
+  </section>
 </main>
 ```
 {: .repl }
