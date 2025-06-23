@@ -226,6 +226,16 @@ Add this basic structure to your body:
           How to Get Startup Ideas
         </a>
       </li>
+      <li>
+        <a href="https://foundersatwork.posthaven.com/find-your-people" target="_blank">
+          Find Your People
+        </a>
+      </li>
+      <li>
+        <a href="https://a16z.com/why-software-is-eating-the-world/" target="_blank">
+          Why Software Is Eating the World
+        </a>
+      </li>
     </ul>
   </section>
 </main>
@@ -246,6 +256,7 @@ Add this basic structure to your body:
 - a
 - ul / li
 - div
+- section
 - img
 
 -->
@@ -415,8 +426,7 @@ You now have a static site ready to deploy!
 
 In the next lessons, you’ll:
 
-- Host your page online
-- Make it available 24/7
+- Host your page online to make it available 24/7
 - Get your first "code review"
 - Connect a custom domain (optional)
 
