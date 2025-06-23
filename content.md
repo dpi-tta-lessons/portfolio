@@ -80,6 +80,10 @@ Here's a complete basic layout:
 {: .repl }
 
 <aside class="tip">
+  You wont see anything rendered when you click `run` because we haven't added any content inside the <code>body</code>.
+</aside>
+
+<aside class="tip">
   Notice how we use indents to indicate nesting. This helps us humans read the code and more easily identify bugs.
 </aside>
 
