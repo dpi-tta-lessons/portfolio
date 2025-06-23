@@ -109,7 +109,7 @@ Starts the HTML document. The `lang="en"` tells browsers (and screen readers) th
 The head section contains setup info about your page — like the title, fonts, or meta tags. This content doesn’t appear directly on the page.
 
 <aside class="tip">
-  We call this machine-readable information "metadata". Metadata is data that describes data. For example, an HTML document is data, but HTML can also contain metadata in its <code><head></code> element that describes the document.
+  We call this machine-readable information "metadata". Metadata is data that describes data. For example, an HTML document is data, but HTML can also contain metadata in its <code>head</code> element that describes the document.
 
   <cite>
     <a href="https://developer.mozilla.org/en-US/docs/Glossary/Metadata">
