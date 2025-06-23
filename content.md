@@ -18,7 +18,7 @@ In this lesson, you'll build a personal web page using HTML and CSS inside a Git
 ## 1. Use Your Codespace
 
 <!-- TODO: show how to access codespaces in GitHub (screenshots)  -->
-Open the same Codespace you used in the GitHub + Codespaces lesson. You can access your codespaces here [https://github.com/codespaces](https://github.com/codespaces).
+Open the same Codespace you used in the GitHub + Codespaces lesson to create your `<h1>Hello, world!</h1>` app. You can access your codespaces here [https://github.com/codespaces](https://github.com/codespaces).
 
 <!-- TODO: show how to access from the repo you created -->
 
@@ -34,16 +34,18 @@ Open the same Codespace you used in the GitHub + Codespaces lesson. You can acce
       <a href="" target="_blank">Getting Started with GitHub Codespaces</a>
     </li>
   </ul>
+  To create a new repo from the <a href="https://github.com/dpi-tta-projects/static-html-template" target="_blank">static-html-template</a>.
 </aside>
 
 <!-- Create a new file inside your project folder: -->
 
 Open the `index.html` file we created in <a href="" target="_blank">Getting Started with GitHub Codespaces</a> and get ready to write the HTML and CSS we need for your portfolio.
 
-<!-- TODO: add video demo -->
 <aside class="tip">
   <p>In Chrome, right-click anywhere on a webpage and choose <code>View Page Source</code>. This helps you learn how other websites are built!</p>
 
+  <video src="assets/view-page-source.mp4" autoplay loop muted playsinline></video>
+  
   Keyboard Shortcut:
   <ul>
     <li>Ctrl + U (Windows)</li>
@@ -51,7 +53,17 @@ Open the `index.html` file we created in <a href="" target="_blank">Getting Star
   </ul>
 </aside>
 
-<!-- TODO: How to use inspector? -->
+<aside class="tip">
+  <p>In Chrome, right-click anywhere on a webpage and choose <code>Inspect</code>. This allows you to click on any element and see the code.</p>
+
+  <video src="assets/inspector.mp4" autoplay loop muted playsinline></video>
+  
+  Keyboard Shortcut:
+  <ul>
+    <li>Ctrl + I (Windows)</li>
+    <li>Command ⌘ + Option ⌥ + I (Mac)</li>
+  </ul>
+</aside>
 
 ## 2. Gather Your Content
 
@@ -241,6 +253,8 @@ Add this basic structure to your body:
 Now that we have the basic html layout in place, we can begin adding style.
 
 <!-- TODO: break this down -->
+
+<!-- TODO: explain how 'cascading' works -->
 
 ```css
 body {
