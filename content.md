@@ -193,6 +193,7 @@ Add this basic structure to your body:
 
 <main>
   <ul id="social-links">
+    <h3>Social Links</h3>
     <li>
       <a href="https://www.linkedin.com/in/ianheraty/" target="_blank">
         LinkedIn
@@ -216,6 +217,7 @@ Add this basic structure to your body:
   </ul>
 
   <ul id="posts">
+    <h3>Posts</h3>
     <li>
       <a href="https://paulgraham.com/startupideas.html" target="_blank">
         How to Get Startup Ideas
