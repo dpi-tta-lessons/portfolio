@@ -206,11 +206,6 @@ Add this basic structure to your body:
         </a>
       </li>
       <li>
-        <a href="https://www.youtube.com/@dpi-tta" target="_blank">
-          Tech Talent Accelerator YouTube Page
-        </a>
-      </li>
-      <li>
         <a href="mailto:ihera2@uillinois.edu" target="_blank">
           Email
         </a>
