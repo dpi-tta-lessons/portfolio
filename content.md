@@ -192,8 +192,7 @@ Add this basic structure to your body:
 </header>
 
 <main>
-  <h2>Links</h2>
-  <ul>
+  <ul id="social-links">
     <li>
       <a href="https://www.linkedin.com/in/ianheraty/" target="_blank">
         LinkedIn
@@ -210,6 +209,14 @@ Add this basic structure to your body:
       </a>
     </li>
     <li>
+      <a href="mailto:ihera2@uillinois.edu" target="_blank">
+        Email
+      </a>
+    </li>
+  </ul>
+
+  <ul id="posts">
+    <li>
       <a href="https://paulgraham.com/startupideas.html" target="_blank">
         How to Get Startup Ideas
       </a>
@@ -219,28 +226,29 @@ Add this basic structure to your body:
 ```
 {: .repl }
 
+<!-- TODO: add screenshot -->
 <aside class="tip">
-  Notice how we use indents to indicate nesting. This helps us humans read the code and more easily identify bugs.
+  Notice how we use indents to indicate nesting. Typically, opening and closing tags should be either on the same line or vertically aligned. This helps us humans read the code and more easily identify bugs.
 </aside>
 
-<!-- TODO: adding images -->
+<!-- TODO: break this down by element 
 
-<!-- TODO
-
-note on renaming and using standard / consistent casing in images 
-(kebab-case is good)
-this makes it easier for us 
+- header - https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/header
+- main - https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/main
+- h1-6
+- p
+- a
+- ul / li
+- div
+- img
 
 -->
+
 <aside class="tip">
-  Use all lowercase kebab-case for filenames (eg my-avatar.jpg) to avoid broken links and stay consistent across platforms.
+  Use all lowercase kebab-case for filenames (eg my-avatar.jpg) to avoid broken links and stay consistent across platforms. Even though we can technically use any casing, it's a good practice to follow a convention and be consistent.
 </aside>
 
-<!-- TODO: start with <style> tags in the <head> 
-
-then refactor and move to `styles/application.css`
-
--->
+<!-- TODO: start with inline styles, then <style> tags (with element/id/class selectors), then css stylesheet -->
 ## 6. Clean Styling
 
 <!-- TODO: break this down -->
@@ -293,7 +301,6 @@ In the `<head>`, make sure this tag is present:
 {: .copyable }
 
 <!-- TODO: explain viewport -->
-
 
 <!-- TODO: explain -->
 Use relative units (em, %) in your styles and avoid fixed pixel widths when possible.
@@ -383,8 +390,10 @@ Ensures the layout adjusts properly on mobile devices (very important for respon
 
 stylesheet 
 
+refactor and move to `styles/application.css`
+
 ```html
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles/application.css">
 ```
 Connects your HTML to an external CSS file so you can style your page.
 
