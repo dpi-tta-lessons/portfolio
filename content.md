@@ -148,11 +148,11 @@ Makes sure your page can display all types of characters — symbols, emojis, ac
 
 Sets the text that appears in the browser tab.
 
+![title in tab](assets/title-tab.png)
+
 <aside class="warning">
   Make sure to change this to something relevant for your website. 😄
 </aside>
-
-![title in tab](assets/title-tab.png)
 
 #### Body
 
@@ -248,6 +248,8 @@ Add this basic structure to your body, replacing the `<!-- Your content goes her
 </aside>
 
 ![basic page layout](assets/basic-layout.png)
+
+Now you can replace all the placeholder images, links, and text with your own content. When you've got all your own content setup, you can move on to [styling](#5-styling) so it looks professional.
 
 ### Missing Image Icon
 
