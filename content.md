@@ -70,9 +70,7 @@ Here's a complete basic layout:
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ian Heraty</title>
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- Your content goes here -->
@@ -81,7 +79,74 @@ Here's a complete basic layout:
 ```
 {: .repl }
 
-<!-- TODO: break this down. what is each element doing? -->
+<aside class="tip">
+  Notice how we use indents to indicate nesting. This helps us humans read the code and more easily identify bugs.
+</aside>
+
+### What Each Line Does
+
+#### Doctype
+
+```html
+<!DOCTYPE html>
+```
+
+Declares that this file uses HTML5 — the current standard.
+
+#### HTML lang Attribute
+
+```html
+<html lang="en">
+```
+Starts the HTML document. The `lang="en"` tells browsers (and screen readers) that the content is in English.
+
+#### `<head>`
+
+```html
+<head>
+```
+
+The head section contains setup info about your page — like the title, fonts, or meta tags. This content doesn’t appear directly on the page.
+
+<aside class="tip">
+  We call this machine-readable information "metadata". Metadata is data that describes data. For example, an HTML document is data, but HTML can also contain metadata in its <code><head></code> element that describes the document.
+
+  <cite>
+    <a href="https://developer.mozilla.org/en-US/docs/Glossary/Metadata">
+      MDN
+    </a>
+  </cite>
+</aside>
+
+#### Charset
+
+```html
+<meta charset="UTF-8">
+```
+
+Makes sure your page can display all types of characters — symbols, emojis, accents, etc. It is used to ensure that the browser correctly interprets the characters and symbols on the webpage, commonly set as UTF-8 for universal character support across languages and symbols.
+
+#### Title
+
+```html
+<title>Ian Heraty</title>
+```
+
+Sets the text that appears in the browser tab.
+
+<aside class="warning">
+  Make sure to change this to something relevant for your website. 😄
+</aside>
+
+<!-- TODO: add screenshot -->
+
+#### Body
+
+```html
+<body>
+```
+
+This is the visible part of your site — everything inside the `<body>` tags show up in the browser window.
 
 ## 4. Add a Debug Border
 
@@ -302,6 +367,22 @@ add aside on indents and formatting to improve readability
 maybe do this in a subsequent "code review" lesson?
 
 In VS Code, use Cmd+Shift+P (Mac) or Ctrl+Shift+P (Windows), then search “Format Document” to clean up your HTML or CSS automatically.
+-->
+
+<!-- TODO: refactoring
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+Ensures the layout adjusts properly on mobile devices (very important for responsive design!).
+
+stylesheet 
+
+```html
+<link rel="stylesheet" href="style.css">
+```
+Connects your HTML to an external CSS file so you can style your page.
+
 -->
 
 ## What’s Next?
