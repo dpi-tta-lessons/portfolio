@@ -483,6 +483,8 @@ This simulates phones and tablets in your browser.
 
 ![mobile view toggle](assets/devtools-mobile-toggle.png)
 
+<!-- TODO: empty cache hard reload + screenshot -->
+
 ## Validate Your HTML
 
 Use the [W3C Validator](https://validator.w3.org/) to check your code for mistakes. Paste your HTML code or upload the file to check for typos or unclosed tags. This can be a life saver when you can't figure out what's breaking your HTML.
