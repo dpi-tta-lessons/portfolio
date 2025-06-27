@@ -3,6 +3,7 @@
 Create a personal portfolio webpage to showcase your work and make it easy for others to find your projects online.
 
 <!-- TODO: screenshot of completed portfolio -->
+![Screenshot of finished portfolio](assets/finished-portfolio-example.png)
 
 ## Why You Need a Portfolio
 
@@ -20,50 +21,17 @@ In this lesson, you'll build a personal web page using HTML and CSS inside a Git
 <!-- TODO: show how to access codespaces in GitHub (screenshots)  -->
 Open the same Codespace you used in the GitHub + Codespaces lesson to create your `<h1>Hello, world!</h1>` app. You can access your codespaces here [https://github.com/codespaces](https://github.com/codespaces).
 
-<!-- TODO: show how to access from the repo you created -->
+Alternatively, navigate to the repository where you created your Codespace (e.g. `your-username/hello-world`). Click the green **Code** button and then the **Codespaces** tab to reopen your environment.
+
+![Access from repo](assets/access-codespace-from-repo.png)
 
 <aside class="warning">
-  If you haven’t set up a Codespace before, start with these lessons first:
-  <ul>
-    <li>
-      <!-- TODO: set link via slug -->
-      <a href="" target="_blank">HTML & CSS Basics</a>
-    </li>
-    <li>
-      <!-- TODO: set link via slug -->
-      <a href="" target="_blank">Getting Started with GitHub Codespaces</a>
-    </li>
-  </ul>
-  To create a new repo from the <a href="https://github.com/dpi-tta-projects/static-html-template" target="_blank">static-html-template</a>.
+  If you haven’t set up a Codespace before, start with this lesson (<a href="" target="_blank">Getting Started with GitHub Codespaces</a>) to create a new repo from the <a href="https://github.com/dpi-tta-projects/static-html-template" target="_blank">static-html-template</a>.
 </aside>
 
 <!-- Create a new file inside your project folder: -->
 
 Open the `index.html` file we created in <a href="" target="_blank">Getting Started with GitHub Codespaces</a> and get ready to write the HTML and CSS we need for your portfolio.
-
-<aside class="tip">
-  <p>In Chrome, right-click anywhere on a webpage and choose <code>View Page Source</code>. This helps you learn how other websites are built!</p>
-
-  <video src="assets/view-page-source.mp4" autoplay loop muted playsinline></video>
-  
-  Keyboard Shortcut:
-  <ul>
-    <li>Ctrl + U (Windows)</li>
-    <li>Command ⌘ + Option ⌥ + U (Mac)</li>
-  </ul>
-</aside>
-
-<aside class="tip">
-  <p>In Chrome, right-click anywhere on a webpage and choose <code>Inspect</code>. This allows you to click on any element and see the code.</p>
-
-  <video src="assets/inspector.mp4" autoplay loop muted playsinline></video>
-  
-  Keyboard Shortcut:
-  <ul>
-    <li>Ctrl + I (Windows)</li>
-    <li>Command ⌘ + Option ⌥ + I (Mac)</li>
-  </ul>
-</aside>
 
 ## 2. Gather Your Content
 
@@ -234,19 +202,18 @@ Add this basic structure to your body, replacing the `<!-- Your content goes her
   Notice how we use indents to indicate nesting. Typically, opening and closing tags should be either on the same line or vertically aligned. This helps us humans read the code and more easily identify bugs.
 </aside>
 
-<!-- TODO: break this down by element 
+| Tag        | What it does                                                                 |
+|------------|------------------------------------------------------------------------------|
+| `<header>` | Contains introductory content (like your name and avatar)                   |
+| `<main>`   | Main content of the document (what the page is about)                       |
+| `<section>`| A thematically grouped chunk of content                                     |
+| `<h1>`–`<h6>` | Headings; use only one `<h1>` per page (the title), then subheadings     |
+| `<p>`      | Paragraph of text                                                            |
+| `<a>`      | Anchor (link) element                                                        |
+| `<ul>` / `<li>` | Unordered list and list items                                           |
+| `<img>`    | Image element                                                                |
+| `<div>`    | Generic container with no semantic meaning (use when nothing else fits)     |
 
-- header - https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/header
-- main - https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/main
-- h1-6
-- p
-- a
-- ul / li
-- div
-- section
-- img
-
--->
 
 <aside class="tip">
   Use all lowercase kebab-case for filenames (eg my-avatar.jpg) to avoid broken links and stay consistent across platforms. Even though filename casing does not affect functionality, it's a good practice to follow a convention and be consistent. Also, casing becomes very important in some languages.
@@ -268,14 +235,36 @@ Let's add our image to the codespace so we can fix this broken image. A standard
 
 <video src="assets/fix-broken-image.mp4" autoplay loop muted playsinline></video>
 
-<!-- TODO: start with inline styles, then <style> tags (with element/id/class selectors), then css stylesheet -->
+<!-- TODO:
+
+add these to our portfolio step by step
+start with inline styles, then <style> tags (with element/id/class selectors), then css stylesheet 
+
+-->
 ## 5. Styling
 
 Now that we have the basic html layout in place, we can begin adding style.
 
-<!-- TODO: break this down -->
+<aside class="tip">
+  The "Cascading" in Cascading Style Sheets means that <strong>styles get applied in order</strong>. If two styles conflict, the last one usually wins.
 
-<!-- TODO: explain how 'cascading' works -->
+  For example:
+  <pre>
+    <code>
+      p {
+        color: red;
+      }
+
+      p {
+        color: blue;
+      }
+    </code>
+  </pre>
+
+  The paragraph text will be blue, because it’s the last rule declared.
+</aside>
+
+<!-- TODO: break this down by style rule (eg font-family, margin, padding, text-align, etc. -->
 
 ```css
 body {
@@ -337,7 +326,6 @@ Most people will view your site on their phones. Responsive design ensures it lo
 
 <!-- TODO:
 
-Using DevTools “Toggle device toolbar”
 Explaining the viewport meta tag
 Avoiding fixed widths (width: 500px) in favor of percentages or max-width
 
@@ -448,6 +436,46 @@ refactor and move to `styles/application.css`
 Connects your HTML to an external CSS file so you can style your page.
 
 -->
+
+## Using Devtools
+
+### View Page Source
+
+In Chrome, right-click anywhere on a webpage and choose `View Page Source`. This helps you learn how other websites are built!
+
+<video src="assets/view-page-source.mp4" autoplay loop muted playsinline></video>
+
+Keyboard Shortcut:
+
+- Ctrl + U (Windows)
+- Command ⌘ + Option ⌥ + U (Mac)
+
+### Inspector
+
+In Chrome, right-click anywhere on a webpage and choose `Inspect`. This allows you to click on any element and see the code.
+
+<video src="assets/inspector.mp4" autoplay loop muted playsinline></video>
+  
+Keyboard Shortcut:
+
+- Ctrl + I (Windows)
+- Command ⌘ + Option ⌥ + I (Mac)
+
+### Toggle Device Toolbar
+
+To preview how your site looks on different screen sizes:
+
+- Right-click your site → **Inspect**
+- Click the **Toggle device toolbar** icon
+
+Keyboard Shortcut:
+
+- Ctrl + Shift + M (Windows)
+- Command ⌘ + Shift + M (Mac)
+
+This simulates phones and tablets in your browser.
+
+![mobile view toggle](assets/devtools-mobile-toggle.png)
 
 ## What’s Next?
 
