@@ -272,7 +272,7 @@ start with inline styles, then <style> tags (with element/id/class selectors), t
 -->
 ## 5. Style
 
-Now that you have your HTML layout in place, let's start styling it. You'll first apply inline styles directly to elements, then refactor those into a <style> tag in the <head>, and finally move them to a style.css file for a clean, professional structure.
+Now that you have your HTML layout in place, let's start styling it. You'll first apply inline styles directly to elements, then refactor those into a `<style>` tag in the `<head>`, and finally move them to a `.css` file for a clean, professional structure.
 
 <aside class="tip">
   The "Cascading" in Cascading Style Sheets means that <strong>styles get applied in order</strong>. If two styles conflict, the last one usually wins.
@@ -295,7 +295,6 @@ Now that you have your HTML layout in place, let's start styling it. You'll firs
 
 <!--
 TODO: maybe put this in a css reference?
-
 
 break this down by style rule (eg font-family, margin, padding, text-align, etc. 
 
