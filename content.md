@@ -214,7 +214,6 @@ Add this basic structure to your body, replacing the `<!-- Your content goes her
 | `<img>`    | Image element                                                                |
 | `<div>`    | Generic container with no semantic meaning (use when nothing else fits)     |
 
-
 <aside class="tip">
   Use all lowercase kebab-case for filenames (eg my-avatar.jpg) to avoid broken links and stay consistent across platforms. Even though filename casing does not affect functionality, it's a good practice to follow a convention and be consistent. Also, casing becomes very important in some languages.
 </aside>
@@ -235,15 +234,45 @@ Let's add our image to the codespace so we can fix this broken image. A standard
 
 <video src="assets/fix-broken-image.mp4" autoplay loop muted playsinline></video>
 
+### Add a Debug Border
+
+To visualize layout areas during development, add this to your CSS:
+
+```css
+* {
+  border: 1px solid red;
+}
+```
+{: .copyable }
+
+```html
+<style>
+* {
+  border: 1px solid red;
+}
+</style>
+
+<div>
+  <p>The * selector targets all elements. Notice how every element is wrapped in a border.</p>
+</div>
+```
+{: .repl }
+
+Add this debug border to your portfolio page while building out the layout.
+
+![debug border portfolio](assets/debug-border-example.png)
+
+You can remove this style rule later once the layout looks good.
+
 <!-- TODO:
 
 add these to our portfolio step by step
 start with inline styles, then <style> tags (with element/id/class selectors), then css stylesheet 
 
 -->
-## 5. Styling
+## 5. Style
 
-Now that we have the basic html layout in place, we can begin adding style.
+Now that you have your HTML layout in place, let's start styling it. You'll first apply inline styles directly to elements, then refactor those into a <style> tag in the <head>, and finally move them to a style.css file for a clean, professional structure.
 
 <aside class="tip">
   The "Cascading" in Cascading Style Sheets means that <strong>styles get applied in order</strong>. If two styles conflict, the last one usually wins.
@@ -264,7 +293,11 @@ Now that we have the basic html layout in place, we can begin adding style.
   The paragraph text will be blue, because it’s the last rule declared.
 </aside>
 
-<!-- TODO: break this down by style rule (eg font-family, margin, padding, text-align, etc. -->
+<!--
+TODO: maybe put this in a css reference?
+
+
+break this down by style rule (eg font-family, margin, padding, text-align, etc. 
 
 ```css
 body {
@@ -284,41 +317,18 @@ img {
 ```
 {: .copyable }
 
+
 ### Common CSS Properties
 
-<!-- TODO: break this up and explain (using practical examples for each: margin, padding, border-radius, box-shadow) -->
 ```css
 margin: auto;
 padding: 1rem;
 border-radius: 8px;
 box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 ```
+-->
 
-### Add a Debug Border
 
-To visualize layout areas, add this to your CSS:
-
-```css
-* {
-  border: 1px solid red;
-}
-```
-{: .copyable }
-
-```html
-<style>
-* {
-  border: 1px solid red;
-}
-</style>
-
-<div>
-  <p>Notice how each element box is wrapped in a border</p>
-</div>
-```
-{: .repl }
-
-You can remove this later once layout looks good.
 
 ## 6. Make It Responsive
 
@@ -406,9 +416,6 @@ pages/
 
 -->
 
-## 9. Validate Your HTML
-
-Use the [W3C Validator](https://validator.w3.org/) to check your code for mistakes. Paste your HTML code or upload the file to check for typos or unclosed tags.
 
 <!-- TODO
 
@@ -476,6 +483,10 @@ Keyboard Shortcut:
 This simulates phones and tablets in your browser.
 
 ![mobile view toggle](assets/devtools-mobile-toggle.png)
+
+## Validate Your HTML
+
+Use the [W3C Validator](https://validator.w3.org/) to check your code for mistakes. Paste your HTML code or upload the file to check for typos or unclosed tags. This can be a life saver when you can't figure out what's breaking your HTML.
 
 ## What’s Next?
 
