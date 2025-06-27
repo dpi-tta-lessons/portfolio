@@ -75,6 +75,11 @@ You'll need:
 
 ## 3. Start with the HTML Boilerplate
 
+<aside class="tip">
+  <strong>What does "boilerplate" mean?</strong><br>
+  In programming, "boilerplate" refers to snippets of code that are repeated multiple times with little (or no) variation. When using languages that are considered verbose, programmers must write a lot of boilerplate code to accomplish only minor functionality.
+</aside>
+
 Here's a complete basic layout:
 
 ```html
