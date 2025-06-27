@@ -249,7 +249,7 @@ Add this basic structure to your body, replacing the `<!-- Your content goes her
 -->
 
 <aside class="tip">
-  Use all lowercase kebab-case for filenames (eg my-avatar.jpg) to avoid broken links and stay consistent across platforms. Even though we can technically use any casing, it's a good practice to follow a convention and be consistent.
+  Use all lowercase kebab-case for filenames (eg my-avatar.jpg) to avoid broken links and stay consistent across platforms. Even though filename casing does not affect functionality, it's a good practice to follow a convention and be consistent. Also, casing becomes very important in some languages.
 </aside>
 
 ![basic page layout](assets/basic-layout.png)
