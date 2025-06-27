@@ -154,7 +154,7 @@ Add this basic structure to your body, replacing the `<!-- Your content goes her
 <main>
   <section>
     <h3>Social Links</h3>
-    <ul id="social-links">
+    <ul>
       <li>
         <a href="https://www.linkedin.com/in/ianheraty/" target="_blank">
           LinkedIn
@@ -175,7 +175,7 @@ Add this basic structure to your body, replacing the `<!-- Your content goes her
 
   <section>
     <h3>Blog Posts</h3>
-    <ul id="blog-posts">
+    <ul>
       <li>
         <a href="https://paulgraham.com/startupideas.html" target="_blank">
           How to Get Startup Ideas
