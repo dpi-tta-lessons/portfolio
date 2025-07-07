@@ -17,11 +17,10 @@ As a developer, having a portfolio gives you a space to:
 - Show off your skills
 - Be discoverable by employers or collaborators
 
-
 ## 1. Use Your Codespace
 
 <!-- TODO: show how to access codespaces in GitHub (screenshots)  -->
-Open the same Codespace you used in the GitHub + Codespaces lesson to create your `<h1>Hello, world!</h1>` app. You can access your codespaces here [https://github.com/codespaces](https://github.com/codespaces).
+Open the same Codespace you used in the [GitHub + Codespaces](/lessons/github-codespaces-vscode) lesson to create your `<h1>Hello, world!</h1>` app. You can access your codespaces here [https://github.com/codespaces](https://github.com/codespaces).
 
 Alternatively, navigate to the repository where you created your Codespace (e.g. `your-username/hello-world`). Click the green **Code** button and then the **Codespaces** tab to reopen your environment.
 
