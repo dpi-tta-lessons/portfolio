@@ -150,7 +150,7 @@ Remember, [every element in HTML is treated like a box](/lessons/html-css-basics
 <!-- don't give away everything. encourage students to use the inspector and figure out how to build it -->
 
 <!-- TODO: encourage use of comments in the index.html -->
-Add this basic structure to your body, replacing the `<!-- Your content goes here -->` comment. It's a good practice to use comments to document your code and add `TODO`s.
+Add this basic structure to your body, replacing the `<!-- Your content goes here -->` comment. It's a good practice to use comments to document your code and add `TODO`s. You wont see anything when you run this repl because comments are invisible to users.
 
 ```html
 <!-- TODO: avatar -->
@@ -201,11 +201,10 @@ Now we'll use the [image embed element](https://developer.mozilla.org/en-US/docs
 
 You will likely notice a 'broken image icon' after pasting in the basic layout code. This happens when the browser can not find the image at the given path, `src=""`. When this happens, the browser falls back to the value set to `alt`, in our case `"Portrait of Ian Heraty"`.
 
-
 Let's add our image to the codespace so we can fix this broken image. A standard practice is to have an `assets` folder for images, stylesheets, and scripts needed to run our app. Create the `assets` folder and another folder inside called `images`. Now we'll update the `src` attribute to point to our avatar image `assets/images/my-avatar-file`.
 
 <aside class="tip">
-  <code>/</code> is used to indicate a file path in unix systems. For example, if we have a file path <code>assets/images/my-avatar-file.png</code>, this indicates the my-avatar-file.png is inside the <code>images</code> folder, which is inside the <code>assets</code> folder.
+  <code>/</code> is used to indicate a file path in unix systems. For example, if we have a file path <code>assets/images/my-avatar-file.png</code>, this indicates the <code>my-avatar-file.png</code> is inside the <code>images</code> folder, which is inside the <code>assets</code> folder.
 </aside>
 
 <video src="assets/fix-broken-image.mp4" autoplay loop muted playsinline></video>
@@ -253,38 +252,38 @@ Why do we use the list element around each link?
 2. Accessibility. Assistive technologies like screen readers will announce how many items are in the list, making navigation clearer. eg "List with 3 items: GitHub, LinkedIn, dev.to".
 
 ```html
-
-<head>
-  <!-- FontAwesome CDN -->
-  <!-- https://fontawesome.com/icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
 <ul>
   <li>
     <a href="https://github.com/" target="_blank" title="GitHub">
-      <i class="fa-brands fa-github"></i>
+      😼
     </a>
   </li>
   <li>
     <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-      <i class="fa-brands fa-linkedin"></i>
+      🧑‍💼
     </a>
   </li>
   <li>
     <a href="https://dev.to/" target="_blank" title="dev.to">
-      <i class="fa-brands fa-dev"></i>
+      📝
     </a>
   </li>
 </ul>
 ```
 {: .repl}
 
-We've used an icon library called [Font Awesome](https://fontawesome.com/) for the github, linkedin, and dev.to icons. We added a link element to the head to include their css library in our code. Check out their [documentation](https://fontawesome.com/icons) for more icons.
-
 <aside class="tip">
   Notice how we use indents to indicate nesting. Typically, opening and closing tags should be either on the same line or vertically aligned. This helps us humans read the code and more easily identify bugs.
 </aside>
+
+We've used an icon library called [Font Awesome](https://fontawesome.com/) for the github, linkedin, and dev.to icons.  Check out their [documentation](https://fontawesome.com/icons) for more icons.
+
+Add this link element to the head of your code to start using their icons in your code:
+
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+```
+{: .copyable }
 
 ### Article Links
 <!-- TODO: article-links -->
