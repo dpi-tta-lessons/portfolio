@@ -17,22 +17,19 @@ As a developer, having a portfolio gives you a space to:
 - Show off your skills
 - Be discoverable by employers or collaborators
 
-## 1. Use Your Codespace
+## 1. Reuse Your Codespace
 
-<!-- TODO: show how to access codespaces in GitHub (screenshots)  -->
-Open the same Codespace you used in the [GitHub + Codespaces](/lessons/github-codespaces-vscode) lesson to create your `<h1>Hello, world!</h1>` app. You can access your codespaces here [https://github.com/codespaces](https://github.com/codespaces).
+Open the same Codespace you used in the [Getting Started with GitHub Codespaces](/lessons/github-codespaces-vscode) lesson to create your `<h1>Hello, world!</h1>` app. You can access your codespaces here [https://github.com/codespaces](https://github.com/codespaces).
 
 Alternatively, navigate to the repository where you created your Codespace (e.g. `your-username/hello-world`). Click the green **Code** button and then the **Codespaces** tab to reopen your environment.
 
 ![Access from repo](assets/access-codespace-from-repo.png)
 
 <aside class="warning">
-  If you haven’t set up a Codespace before, start with this lesson (<a href="" target="_blank">Getting Started with GitHub Codespaces</a>) to create a new repo from the <a href="https://github.com/dpi-tta-projects/static-html-template" target="_blank">static-html-template</a>.
+  If you haven’t set up a Codespace before, start with this lesson ([Getting Started with GitHub Codespaces](/lessons/github-codespaces-vscode)) to create a new repo from the <a href="https://github.com/dpi-tta-projects/static-html-template" target="_blank">static-html-template</a>.
 </aside>
 
-<!-- Create a new file inside your project folder: -->
-
-Open the `index.html` file we created in <a href="" target="_blank">Getting Started with GitHub Codespaces</a> and get ready to write the HTML and CSS we need for your portfolio.
+Open the `index.html` file we created in [Getting Started with GitHub Codespaces](/lessons/github-codespaces-vscode) and get ready to write the HTML and CSS we need for your portfolio.
 
 ## 2. Gather Your Content
 
