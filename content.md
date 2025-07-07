@@ -280,15 +280,6 @@ Why do we use the list element around each link?
   Notice how we use indents to indicate nesting. Typically, opening and closing tags should be either on the same line or vertically aligned. This helps us humans read the code and more easily identify bugs.
 </aside>
 
-We've used an icon library called [Font Awesome](https://fontawesome.com/) for the github, linkedin, and dev.to icons.  Check out their [documentation](https://fontawesome.com/icons) for more icons.
-
-Add this link element to the head of your code to start using their icons in your code:
-
-```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css" />
-```
-{: .copyable }
-
 ### Article Links
 <!-- TODO: article-links -->
 Now we'll use the list element (`<ul>`), list item (`<li>`), and anchor link (`<a>`) to add links to articles. We'll use a `<h3>` tag to give this section a heading.
@@ -461,7 +452,6 @@ Now you can use icons like:
 
 ```html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-
 
 <i class="fab fa-github"></i> GitHub
 ```
