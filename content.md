@@ -3,7 +3,12 @@
 Create a personal portfolio webpage to showcase your work and make it easy for others to find your projects online.
 
 <!-- TODO: screenshot of completed portfolio -->
-![Screenshot of finished portfolio](assets/finished-portfolio-example.png)
+
+## Goal
+
+By the end of this lesson, you’ll have a mobile-friendly portfolio website running in a GitHub Codespace.
+
+<video src="assets/portfolio-pwa.mp4" autoplay loop muted playsinline></video>
 
 ## Why You Need a Portfolio
 
