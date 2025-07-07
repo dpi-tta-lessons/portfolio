@@ -4,11 +4,12 @@ Create a personal portfolio webpage to showcase your work and make it easy for o
 
 ## Goal
 
-In this lesson, you'll build a mobile-friendly portfolio website using HTML and CSS inside a GitHub Codespace. Check out this example for yourself [heratyian.github.io](https://heratyian.github.io).
-
-<!-- TODO: swap out my personal portfolio link for a generic stand in? -->
+In this lesson, you'll build a mobile-friendly portfolio website using HTML and CSS inside a GitHub Codespace.
 
 <video style="max-width: 375px" src="assets/portfolio-pwa.mp4" autoplay loop muted playsinline></video>
+
+<!-- TODO: swap out my personal portfolio link for a generic stand in? -->
+Check out this example for yourself [heratyian.github.io](https://heratyian.github.io).
 
 ## Why You Need a Portfolio
 
