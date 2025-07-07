@@ -252,6 +252,7 @@ Why do we use the list element around each link?
 2. Accessibility. Assistive technologies like screen readers will announce how many items are in the list, making navigation clearer. eg "List with 3 items: GitHub, LinkedIn, dev.to".
 
 ```html
+<h3>Icon Links</h3>
 <ul>
   <li>
     <a href="https://github.com/" target="_blank" title="GitHub">
@@ -287,6 +288,37 @@ Add this link element to the head of your code to start using their icons in you
 
 ### Article Links
 <!-- TODO: article-links -->
+Now we'll use the list element (`<ul>`), list item (`<li>`), and anchor link (`<a>`) to add links to articles. We'll use a `<h3>` tag to give this section a heading.
+
+```html
+<h3>Articles</h3>
+<ul>
+  <li>
+    <a href="https://paulgraham.com/startupideas.html" target="_blank">
+      How to Get Startup Ideas
+    </a>
+  </li>
+  <li>
+    <a href="https://foundersatwork.posthaven.com/find-your-people" target="_blank">
+      Find Your People
+    </a>
+  </li>
+  <li>
+    <a href="https://a16z.com/why-software-is-eating-the-world/" target="_blank">
+      Why Software Is Eating the World
+    </a>
+  </li>
+</ul>
+```
+
+<!-- TODO
+
+| `<header>` | Contains introductory content (like your name and avatar)                   |
+| `<main>`   | Main content of the document (what the page is about)                       |
+| `<section>`| A thematically grouped chunk of content                                     |
+| `<div>`    | Generic container with no semantic meaning (use when nothing else fits)     | 
+
+-->
 
 Now you can replace all the placeholder images, links, and text with your own content. When you've got all your own content setup, you can move on to [styling](#5-styling) so it looks professional.
 
