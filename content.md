@@ -63,7 +63,7 @@ Here's a complete basic layout:
 {: .repl }
 
 <aside class="tip">
-  You wont see anything rendered when you click `run` because we haven't added any content inside the <code>body</code>.
+  You wont see anything rendered when you click `run` because we haven't added any content inside the <code>body</code> element.
 </aside>
 
 Replace your `<h1>Hello, world</h1>` with this layout in your `index.html` file. We'll add content to the body in the [next step](#4-build-the-page-layout).
@@ -91,7 +91,7 @@ Starts the HTML document. The `lang="en"` tells browsers (and screen readers) th
 <head>
 ```
 
-The head section contains setup info about your page — like the title, fonts, or meta tags. This content doesn’t appear directly on the page.
+The head section contains setup info about your page — like the title, fonts, or meta tags. This content doesn’t appear directly on the page, but tells the browser how to present information. We'll cover this later in the lesson.
 
 <aside class="tip">
   We call this machine-readable information "metadata". Metadata is data that describes data. For example, an HTML document is data, but HTML can also contain metadata in its <code>head</code> element that describes the document.
@@ -122,7 +122,7 @@ Sets the text that appears in the browser tab.
 ![title in tab](assets/title-tab.png)
 
 <aside class="warning">
-  Make sure to change this to something relevant for your website. 😄
+  Make sure to change this to something relevant for your portfolio website (maybe your name?).
 </aside>
 
 #### Body
@@ -135,72 +135,35 @@ This is the visible part of your site — everything inside the `<body>` tags sh
 
 ## 4. Build the Page Layout
 
-Add this basic structure to your body, replacing the `<!-- Your content goes here -->` comment.
+Before getting bogged down in code, let's start out by sketching out what we want to build. This will provide a starting point and allow us to map out each step. Don't worry about getting everything pixel perfect, just focus on the high level concept. [Sketching with a Sharpie](https://signalvnoise.com/posts/466-sketching-with-a-sharpie)
+
+<!-- TODO: max-width -->
+![portfolio layout](assets/portfolio-layout.png)
+
+Now that we have a high-level sketch, we can draw a box around each element and give it a name.
+
+<!-- TODO: max-width -->
+![portfolio layout with annotations](assets/portfolio-layout-annotated.png)
+
+Remember, [every element in HTML is treated like a box](/lessons/html-css-basics#understanding-the-box-around-elements)
+
+<!-- don't give away everything. encourage students to use the inspector and figure out how to build it -->
+
+<!-- TODO: encourage use of comments in the index.html -->
+Add this basic structure to your body, replacing the `<!-- Your content goes here -->` comment. It's a good practice to use comments to document your code and add `TODO`s.
 
 ```html
-<header>
-  <img src="assets/avatar.jpg" alt="Portrait of Ian Heraty">
-  <h1>Ian Heraty</h1>
-  <h3>
-    Software Development Educator at Discovery Partners Institute
-  </h3>
-  <p>
-    Ian is a technical instructor who helps trainees master full stack web development in preparation for technology roles. Before joining Discovery Partners Institute, Ian worked for several years as a software developer and digital consultant. Following a successful career in custom software development and digital consulting, Ian now guides trainees in building robust web applications and developing industry-ready skills. Ian enjoys music, tennis, and exploring new technologies.
-  </p>
-</header>
-
-<main>
-  <section>
-    <h3>Social Links</h3>
-    <ul>
-      <li>
-        <a href="https://www.linkedin.com/in/ianheraty/" target="_blank">
-          LinkedIn
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/heratyian" target="_blank">
-          GitHub
-        </a>
-      </li>
-      <li>
-        <a href="mailto:ihera2@uillinois.edu" target="_blank">
-          Email
-        </a>
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Blog Posts</h3>
-    <ul>
-      <li>
-        <a href="https://paulgraham.com/startupideas.html" target="_blank">
-          How to Get Startup Ideas
-        </a>
-      </li>
-      <li>
-        <a href="https://foundersatwork.posthaven.com/find-your-people" target="_blank">
-          Find Your People
-        </a>
-      </li>
-      <li>
-        <a href="https://a16z.com/why-software-is-eating-the-world/" target="_blank">
-          Why Software Is Eating the World
-        </a>
-      </li>
-    </ul>
-  </section>
-</main>
+<!-- TODO: avatar -->
+<!-- TODO: headline -->
+<!-- TODO: tagline -->
+<!-- TODO: bio -->
+<!-- TODO: icon-links -->
+<!-- TODO: article-links -->
 ```
 {: .repl }
 
-<!-- TODO: add screenshot -->
-<aside class="tip">
-  Notice how we use indents to indicate nesting. Typically, opening and closing tags should be either on the same line or vertically aligned. This helps us humans read the code and more easily identify bugs.
-</aside>
-
-| Tag        | What it does                                                                 |
+<!-- TODO: add a repl for each item -->
+<!-- | Tag        | What it does                                                                 |
 |------------|------------------------------------------------------------------------------|
 | `<header>` | Contains introductory content (like your name and avatar)                   |
 | `<main>`   | Main content of the document (what the page is about)                       |
@@ -210,65 +173,132 @@ Add this basic structure to your body, replacing the `<!-- Your content goes her
 | `<a>`      | Anchor (link) element                                                        |
 | `<ul>` / `<li>` | Unordered list and list items                                           |
 | `<img>`    | Image element                                                                |
-| `<div>`    | Generic container with no semantic meaning (use when nothing else fits)     |
+| `<div>`    | Generic container with no semantic meaning (use when nothing else fits)     | -->
 
+### Adding an Avatar Image
+
+Let's add our avatar image. Let's create a folder for our images. It's a common convention to have an `assets` folder. We can create a folder for `images` here. Go ahead and drag your image into the explorer and place it in `assets/images`. Let's rename this file `avatar` so we can easily reference it in our code.
+
+<!-- TODO: show drag and drop into codespace -->
+<!-- show final view of codespace with image -->
+
+<!-- TODO: adding images / assets -->
 <aside class="tip">
   Use all lowercase kebab-case for filenames (eg my-avatar.jpg) to avoid broken links and stay consistent across platforms. Even though filename casing does not affect functionality, it's a good practice to follow a convention and be consistent. Also, casing becomes very important in some languages.
 </aside>
 
-![basic page layout](assets/basic-layout.png)
+Now we'll use the [image embed element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img), `<img>`, to add our avatar to the page.
 
-Now you can replace all the placeholder images, links, and text with your own content. When you've got all your own content setup, you can move on to [styling](#5-styling) so it looks professional.
+```html
+<!-- NOTE: your src path will depend on where you put the image file -->
+<img src="assets/avatar.png" alt="avatar image">
+```
+{: .repl }
 
-### Missing Image Icon
+#### Missing Image Icon
 
 ![broken image icon](assets/broken-image-icon.png)
 
 You will likely notice a 'broken image icon' after pasting in the basic layout code. This happens when the browser can not find the image at the given path, `src=""`. When this happens, the browser falls back to the value set to `alt`, in our case `"Portrait of Ian Heraty"`.
 
-<!-- TODO: explain how paths work with `/` -->
 
 Let's add our image to the codespace so we can fix this broken image. A standard practice is to have an `assets` folder for images, stylesheets, and scripts needed to run our app. Create the `assets` folder and another folder inside called `images`. Now we'll update the `src` attribute to point to our avatar image `assets/images/my-avatar-file`.
 
+<aside class="tip">
+  <code>/</code> is used to indicate a file path in unix systems. For example, if we have a file path <code>assets/images/my-avatar-file.png</code>, this indicates the my-avatar-file.png is inside the <code>images</code> folder, which is inside the <code>assets</code> folder.
+</aside>
+
 <video src="assets/fix-broken-image.mp4" autoplay loop muted playsinline></video>
 
-### Add a Debug Border
+### Headings
 
-To visualize layout areas during development, add this to your CSS:
-
-```css
-* {
-  border: 1px solid red;
-}
-```
-{: .copyable }
+Let's add our headline using a heading element. We'll use `<h1>` for the headline. [Every page should have 1 (and only 1) `<h1>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements#avoid_using_multiple_h1_elements_on_one_page).
 
 ```html
-<style>
-* {
-  border: 1px solid red;
-}
-</style>
-
-<div>
-  <p>The * selector targets all elements. Notice how every element is wrapped in a border.</p>
-</div>
+<h1>Headline Goes Here</h1>
 ```
 {: .repl }
 
-Add this debug border to your portfolio page while building out the layout.
+Some tips from [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements) on using heading elements:
 
-![debug border portfolio](assets/debug-border-example.png)
+- Heading information can be used by user agents to construct a table of contents for a document automatically.
+- Do not use heading elements to resize text. Instead, use the CSS `font-size` property.
+- Do not skip heading levels: always start from `<h1>`, followed by `<h2>` and so on.
 
-You can remove this style rule later once the layout looks good.
+With this in mind, we'll use a `<h2>` for our tagline.
 
+```html
+<h2>Tagline goes here</h2>
+```
+{: .repl }
+
+### Paragraphs
+
+We'll use [the Paragraph element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/p), `<p>` for our bio.
+
+```html
+<p>Your bio goes here</p>
+```
+{: .repl }
+
+### Icon Links
+<!-- TODO: icon-links -->
+
+We'll use [The Unordered List element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ul), `<ul>`, with the list item element, `<li>` for each link. For the link we'll use [the anchor element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a), `<a>`. 
+
+Why do we use the list element around each link?
+
+1. These links belong together as a set. These icon links are all related and represent a list of navigation options. Wrapping these links in a `<ul>` communicates this relationship clearly.
+
+2. Accessibility. Assistive technologies like screen readers will announce how many items are in the list, making navigation clearer. eg "List with 3 items: GitHub, LinkedIn, dev.to".
+
+```html
+
+<head>
+  <!-- FontAwesome CDN -->
+  <!-- https://fontawesome.com/icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<ul>
+  <li>
+    <a href="https://github.com/" target="_blank" title="GitHub">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+  </li>
+  <li>
+    <a href="https://dev.to/" target="_blank" title="dev.to">
+      <i class="fa-brands fa-dev"></i>
+    </a>
+  </li>
+</ul>
+```
+{: .repl}
+
+We've used an icon library called [Font Awesome](https://fontawesome.com/) for the github, linkedin, and dev.to icons. We added a link element to the head to include their css library in our code. Check out their [documentation](https://fontawesome.com/icons) for more icons.
+
+<aside class="tip">
+  Notice how we use indents to indicate nesting. Typically, opening and closing tags should be either on the same line or vertically aligned. This helps us humans read the code and more easily identify bugs.
+</aside>
+
+### Article Links
+<!-- TODO: article-links -->
+
+Now you can replace all the placeholder images, links, and text with your own content. When you've got all your own content setup, you can move on to [styling](#5-styling) so it looks professional.
+
+<!-- TODO: style -->
+## 5. Style
 <!-- TODO:
 
 add these to our portfolio step by step
 start with inline styles, then <style> tags (with element/id/class selectors), then css stylesheet 
 
 -->
-## 5. Style
 
 Now that you have your HTML layout in place, let's start styling it. You'll first apply inline styles directly to elements, then refactor those into a `<style>` tag in the `<head>`, and finally move them to a `.css` file for a clean, professional structure.
 
@@ -314,7 +344,6 @@ img {
 ```
 {: .copyable }
 
-
 ### Common CSS Properties
 
 ```css
@@ -325,7 +354,36 @@ box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 ```
 -->
 
+<!-- TODO: move to styles section -->
+### Add a Debug Border
 
+To visualize layout areas during development, add this to your CSS:
+
+```css
+* {
+  border: 1px solid red;
+}
+```
+{: .copyable }
+
+```html
+<style>
+* {
+  border: 1px solid red;
+}
+</style>
+
+<div>
+  <p>The * selector targets all elements. Notice how every element is wrapped in a border.</p>
+</div>
+```
+{: .repl }
+
+Add this debug border to your portfolio page while building out the layout.
+
+![debug border portfolio](assets/debug-border-example.png)
+
+You can remove this style rule later once the layout looks good.
 
 ## 6. Make It Responsive
 
@@ -486,6 +544,11 @@ This simulates phones and tablets in your browser.
 ## Validate Your HTML
 
 Use the [W3C Validator](https://validator.w3.org/) to check your code for mistakes. Paste your HTML code or upload the file to check for typos or unclosed tags. This can be a life saver when you can't figure out what's breaking your HTML.
+
+<!-- TODO: add screenshot -->
+
+
+<!-- TODO: add how to format document in vs code -->
 
 ## What’s Next?
 
