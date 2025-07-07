@@ -4,7 +4,7 @@ Create a personal portfolio webpage to showcase your work and make it easy for o
 
 ## Goal
 
-By the end of this lesson, you’ll have a mobile-friendly portfolio website running in a GitHub Codespace.
+In this lesson, you'll build a mobile-friendly portfolio website using HTML and CSS inside a GitHub Codespace.
 
 <video style="max-width: 375px" src="assets/portfolio-pwa.mp4" autoplay loop muted playsinline></video>
 
@@ -17,7 +17,6 @@ As a developer, having a portfolio gives you a space to:
 - Show off your skills
 - Be discoverable by employers or collaborators
 
-In this lesson, you'll build a personal web page using HTML and CSS inside a GitHub Codespace.
 
 ## 1. Use Your Codespace
 
