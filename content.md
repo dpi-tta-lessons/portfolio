@@ -319,24 +319,13 @@ start with inline styles, then <style> tags (with element/id/class selectors), t
 
 Now that you have your HTML layout in place, let's start styling it. You'll first apply inline styles directly to elements, then refactor those into a `<style>` tag in the `<head>`, and finally move them to a `.css` file for a clean, professional structure.
 
-<aside class="tip">
-  The "Cascading" in Cascading Style Sheets means that <strong>styles get applied in order</strong>. If two styles conflict, the last one usually wins.
+<!-- TODO: fonts -->
 
-  For example:
-  <pre>
-    <code>
-      p {
-        color: red;
-      }
+<!-- TODO: margin / padding -->
 
-      p {
-        color: blue;
-      }
-    </code>
-  </pre>
+<!-- TODO: avatar image -->
 
-  The paragraph text will be blue, because it’s the last rule declared.
-</aside>
+<!-- TODO: text-align: center -->
 
 <!--
 TODO: maybe put this in a css reference?
