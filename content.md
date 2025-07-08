@@ -140,13 +140,15 @@ This is the visible part of your site — everything inside the `<body>` tags sh
 
 Before getting bogged down in code, let's start out by sketching out what we want to build. This will provide a starting point and allow us to map out each step. Don't worry about getting everything pixel perfect, just focus on the high level concept. [Sketching with a Sharpie](https://signalvnoise.com/posts/466-sketching-with-a-sharpie)
 
-<!-- TODO: max-width -->
-![portfolio layout](assets/portfolio-layout.png)
+<div style="max-width: 375px">
+  <img src="assets/portfolio-layout.png" alt="portfolio layout">
+</div>
 
 Now that we have a high-level sketch, we can draw a box around each element and give it a name.
 
-<!-- TODO: max-width -->
-![portfolio layout with annotations](assets/portfolio-layout-annotated.png)
+<div style="max-width: 375px">
+  <img src="assets/portfolio-layout-annotated.png" alt="portfolio layout with annotations">
+</div>
 
 Remember, [every element in HTML is treated like a box](/lessons/html-css-basics#understanding-the-box-around-elements)
 
