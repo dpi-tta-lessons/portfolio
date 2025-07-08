@@ -154,7 +154,6 @@ Remember, [every element in HTML is treated like a box](/lessons/html-css-basics
 
 <!-- don't give away everything. encourage students to use the inspector and figure out how to build it -->
 
-<!-- TODO: encourage use of comments in the index.html -->
 Add this basic structure to your body, replacing the `<!-- Your content goes here -->` comment. It's a good practice to use comments to document your code and add `TODO`s. You wont see anything when you run this repl because comments are invisible to users.
 
 ```html
@@ -167,18 +166,7 @@ Add this basic structure to your body, replacing the `<!-- Your content goes her
 ```
 {: .repl }
 
-<!-- TODO: add a repl for each item -->
-<!-- | Tag        | What it does                                                                 |
-|------------|------------------------------------------------------------------------------|
-| `<header>` | Contains introductory content (like your name and avatar)                   |
-| `<main>`   | Main content of the document (what the page is about)                       |
-| `<section>`| A thematically grouped chunk of content                                     |
-| `<h1>`–`<h6>` | Headings; use only one `<h1>` per page (the title), then subheadings     |
-| `<p>`      | Paragraph of text                                                            |
-| `<a>`      | Anchor (link) element                                                        |
-| `<ul>` / `<li>` | Unordered list and list items                                           |
-| `<img>`    | Image element                                                                |
-| `<div>`    | Generic container with no semantic meaning (use when nothing else fits)     | -->
+<!-- TODO: show gif of shortcut to add comments cmd + '/' -->
 
 ### Adding an Avatar Image
 
@@ -246,7 +234,6 @@ We'll use [the Paragraph element](https://developer.mozilla.org/en-US/docs/Web/H
 {: .repl }
 
 ### Icon Links
-<!-- TODO: icon-links -->
 
 We'll use [The Unordered List element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ul), `<ul>`, with the list item element, `<li>` for each link. For the link we'll use [the anchor element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a), `<a>`. 
 
@@ -283,7 +270,7 @@ Why do we use the list element around each link?
 </aside>
 
 ### Article Links
-<!-- TODO: article-links -->
+
 Now we'll use the list element (`<ul>`), list item (`<li>`), and anchor link (`<a>`) to add links to articles. We'll use a `<h3>` tag to give this section a heading.
 
 ```html
@@ -308,14 +295,16 @@ Now we'll use the list element (`<ul>`), list item (`<li>`), and anchor link (`<
 ```
 {: .repl}
 
-<!-- TODO
+### More HTML Elements
 
-| `<header>` | Contains introductory content (like your name and avatar)                   |
-| `<main>`   | Main content of the document (what the page is about)                       |
-| `<section>`| A thematically grouped chunk of content                                     |
-| `<div>`    | Generic container with no semantic meaning (use when nothing else fits)     | 
+Here are some more HTML elements that may come in handy while building out your portfolio page.
 
--->
+|   Element  |                     Description                                             |                                           Link                                          |
+| ---------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| `<header>` | Contains introductory content (like your name and avatar)                   | [Details](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/header)  |
+| `<main>`   | Main content of the document (what the page is about)                       | [Details](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/main)    |
+| `<section>`| A thematically grouped chunk of content                                     | [Details](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/section) |
+| `<div>`    | Generic container with no semantic meaning (use when nothing else fits)     | [Details](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/div)     |
 
 Now you can replace all the placeholder images, links, and text with your own content. When you've got all your own content setup, you can move on to [styling](#5-styling) so it looks professional.
 
