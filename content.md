@@ -306,7 +306,11 @@ Here are some more HTML elements that may come in handy while building out your 
 | `<section>`| A thematically grouped chunk of content                                     | [Details](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/section) |
 | `<div>`    | Generic container with no semantic meaning (use when nothing else fits)     | [Details](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/div)     |
 
-Now you can replace all the placeholder images, links, and text with your own content. When you've got all your own content setup, you can move on to [styling](#5-styling) so it looks professional.
+![plain html portfolio page](assets/plain-html.png)
+
+Your website should start looking something like our target (replacing all the placeholder images, links, and text with your own content).
+
+When you've got all your own content setup, you can move on to [styling](#5-styling).
 
 <!-- TODO: style -->
 ## 5. Style
@@ -385,11 +389,11 @@ To visualize layout areas during development, add this to your CSS:
 ```
 {: .repl }
 
-Add this debug border to your portfolio page while building out the layout.
+Add `<style>` tags with this debug border to your `<head>` while building out the layout. You can remove this style rule later once the layout looks good.
 
 ![debug border portfolio](assets/debug-border-example.png)
 
-You can remove this style rule later once the layout looks good.
+
 
 ## 6. Make It Responsive
 
