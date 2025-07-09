@@ -29,7 +29,7 @@ Alternatively, navigate to the repository where you created your Codespace (e.g.
 ![Access from repo](assets/access-codespace-from-repo.png)
 
 <aside class="warning">
-  If you haven’t set up a Codespace before, start with this lesson ([Getting Started with GitHub Codespaces](/lessons/github-codespaces-vscode)) to create a new repo from the <a href="https://github.com/dpi-tta-projects/static-html-template" target="_blank">static-html-template</a>.
+  If you haven’t set up a Codespace before, start with this lesson <a href="/lessons/github-codespaces-vscode">Getting Started with GitHub Codespaces</a> to create a new repo from the <a href="https://github.com/dpi-tta-projects/static-html-template" target="_blank">static-html-template</a>.
 </aside>
 
 Open the `index.html` file we created in [Getting Started with GitHub Codespaces](/lessons/github-codespaces-vscode) and get ready to write the HTML and CSS we need for your portfolio.
