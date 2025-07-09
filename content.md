@@ -39,7 +39,7 @@ Open the `index.html` file we created in [Getting Started with GitHub Codespaces
 You'll need:
 
 - A headshot or avatar image
-- A short bio or tagline
+- A short bio and tagline
 - Links to projects, blog posts, websites and/or social media
 
 ## 3. Start with the HTML Boilerplate
