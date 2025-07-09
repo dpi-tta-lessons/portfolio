@@ -40,7 +40,7 @@ You'll need:
 
 - A headshot or avatar image
 - A short bio or tagline
-- Links to projects or social media (+ images or icons)
+- Links to projects, blog posts, websites and/or social media
 
 ## 3. Start with the HTML Boilerplate
 
