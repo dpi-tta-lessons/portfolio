@@ -321,7 +321,15 @@ start with inline styles, then <style> tags (with element/id/class selectors), t
 
 -->
 
-Now that you have your HTML layout in place, let's start styling it. You'll first apply inline styles directly to elements, then refactor those into a `<style>` tag in the `<head>`, and finally move them to a `.css` file for a clean, professional structure.
+Now that you have your HTML layout in place, let's start styling it. Let's start by adding `<style>` tags to our `<head>`. This is where we'll put our css selectors and styles.
+
+```html
+<!-- nested in your <head> -->
+<style>
+  /* selectors and styles will go here */
+</style>
+```
+{: .copyable }
 
 <!-- TODO: fonts -->
 
