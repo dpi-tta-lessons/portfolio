@@ -454,7 +454,63 @@ Use the dev tools elements panel to select the `<body>` element. You'll see all 
 
 <!-- TODO: explain px, em, rem, etc. -->
 
-<!-- TODO: fonts -->
+### Fonts
+
+Fonts help express the personality of your website and improve readability. By default, browsers use system fonts, but you can customize them easily with CSS.
+
+#### System Fonts
+
+Your browser automatically picks a system font, like: `Arial`, `Times New Roman`, `Georgia`, `Courier New`, `Verdana`. [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)
+
+You can use them like this:
+
+```css
+body {
+  font-family: Arial, sans-serif;
+}
+```
+{: .copyable }
+
+<aside class="tip">
+  Always include a generic fallback like <code>sans-serif</code> or <code>serif</code> to ensure consistent display across devices.
+</aside>
+
+#### Add a Custom Font with Google Fonts
+
+[Google Fonts](fonts.google.com) lets you use beautiful, free fonts with just a couple lines of code.
+
+##### Step 1: Choose a Font
+
+Visit [fonts.google.com](fonts.google.com), pick a font, and click "Select this style". Then copy the `<link>` tag provided.
+
+For example, to use Roboto:
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+```
+{: .copyable }
+
+Paste this inside your `<head>` element, like this:
+
+```html
+<head>
+  ...
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+```
+
+##### Step 2: Apply the Font with CSS
+
+```css
+body {
+  font-family: 'Roboto', sans-serif;
+}
+```
+{: .copyable }
+
+<aside class="tip">
+Always include the fallback font after the custom one. If the custom font fails to load, the browser will use the fallback.
+</aside>
 
 ### Avatar
 
@@ -464,12 +520,16 @@ Use the dev tools elements panel to select the `<body>` element. You'll see all 
 
 ## 6. Make It Responsive
 
-Most people will view your site on their phones. Responsive design ensures it looks good on all screen sizes.
+Most people will view your site on their phones. Responsive design ensures it looks great on all screen sizes.
 
 <!-- TODO:
 
 Explaining the viewport meta tag
 Avoiding fixed widths (width: 500px) in favor of percentages or max-width
+
+- also @media-query
+
+- demo chrome device toolbar
 
 -->
 
