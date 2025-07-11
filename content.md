@@ -308,18 +308,40 @@ Here are some more HTML elements that may come in handy while building out your 
 
 ![plain html portfolio page](assets/plain-html.png)
 
-Your website should start looking something like our target (replacing all the placeholder images, links, and text with your own content).
+Your website should start looking something like our [target](heratyian.github.io) (replacing all the placeholder images, links, and text with your own content).
+
+<!-- TODO: encourage students to use devtools to debug and see other sites -->
+## Using Devtools
+
+Now that you're a developer, you should familiarize yourself with the developer tools built in to web browsers like Chrome.
+
+### View Page Source
+
+In Chrome, right-click anywhere on a webpage and choose `View Page Source`. This helps you learn how other websites are built!
+
+<video src="assets/view-page-source.mp4" autoplay loop muted playsinline></video>
+
+Keyboard Shortcut:
+
+- Ctrl + U (Windows)
+- Command ⌘ + Option ⌥ + U (Mac)
+
+### Inspector
+
+In Chrome, right-click anywhere on a webpage and choose `Inspect`. This allows you to click on any element and see the code.
+
+<video src="assets/inspector.mp4" autoplay loop muted playsinline></video>
+  
+Keyboard Shortcut:
+
+- Ctrl + I (Windows)
+- Command ⌘ + Option ⌥ + I (Mac)
+
+---
 
 When you've got all your own content setup, you can move on to [styling](#5-styling).
 
-<!-- TODO: style -->
 ## 5. Style
-<!-- TODO:
-
-add these to our portfolio step by step
-start with inline styles, then <style> tags (with element/id/class selectors), then css stylesheet 
-
--->
 
 Now that you have your HTML layout in place, let's start styling it. Let's start by adding `<style>` tags to our `<head>`. This is where we'll put our css selectors and styles.
 
@@ -330,39 +352,6 @@ Now that you have your HTML layout in place, let's start styling it. Let's start
 </style>
 ```
 {: .copyable }
-
-<!--
-TODO: maybe put this in a css reference?
-
-break this down by style rule (eg font-family, margin, padding, text-align, etc. 
-
-```css
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  background: linear-gradient(to right, #ece9e6, #ffffff);
-  min-height: 100vh;
-}
-
-img {
-  width: 150px;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-```
-{: .copyable }
-
-### Common CSS Properties
-
-```css
-margin: auto;
-padding: 1rem;
-border-radius: 8px;
-box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-```
--->
 
 ### Add a Debug Border
 
@@ -391,13 +380,6 @@ To visualize layout areas during development, add this to your CSS:
 Add this debug border while building out layouts. You can remove this style rule later once you're happy with the layout.
 
 ![debug border portfolio](assets/debug-border-example.png)
-
-<!-- 
-TODO: empy cache and hard reload instructions 
-
-
-hmmm... can we do that later since we're using <style> tags?
--->
 
 ### Base Styles
 
@@ -451,8 +433,6 @@ Changes how width and height are calculated: padding and border are included in 
 Use the dev tools elements panel to select the `<body>` element. You'll see all the styles being applied to this element in the styles panel. You can toggle each style individually to see its effect on the layout in realtime.
 
 <video src="assets/toggle-styles-inspector.mp4" autoplay loop muted playsinline></video>
-
-<!-- TODO: explain px, em, rem, etc. -->
 
 ### Fonts
 
@@ -514,14 +494,71 @@ Always include the fallback font after the custom one. If the custom font fails 
 
 ### Avatar
 
-<!-- TODO: avatar image -->
+Let’s style your avatar image so it appears centered, circular, and neatly sized.
 
-<!-- TODO: text-align: center -->
+#### 1. Use `img` tag
+
+Add the image to your HTML and give it a descriptive `alt` and a `class` of avatar:
+
+```html
+<img src="assets/images/avatar.png" alt="Portrait of ..." class="avatar">
+```
+{: .repl }
+
+<aside class="tip">
+Use all lowercase, kebab-case for filenames (like <code>avatar.png</code>) to avoid broken links and stay consistent across platforms.
+</aside>
+
+#### 2. Style Your Avatar
+
+Inside your `<style>` block, add this CSS:
+
+```css
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+```
+{: .copyable }
+
+Why This Works:
+
+- `border-radius: 100%`: Rounds the image into a perfect circle.
+- `object-fit: cover`: Ensures the image fills its box without distortion.
+- `display: block` + `margin-left: auto` / `margin-right: auto`: Horizontally centers the image.
+
+<aside class="tip">
+You can adjust <code>width:</code> and <code>height:</code> to make the avatar larger or smaller in one place.
+</aside>
+
+Once added, your avatar should appear centered and neatly cropped into a circle.
 
 ## 6. Make It Responsive
 
 Most people will view your site on their phones. Responsive design ensures it looks great on all screen sizes.
 
+### Toggle Device Toolbar
+
+To preview how your site looks on different screen sizes:
+
+- Right-click your site → **Inspect**
+- Click the **Toggle device toolbar** icon
+
+Keyboard Shortcut:
+
+- Ctrl + Shift + M (Windows)
+- Command ⌘ + Shift + M (Mac)
+
+This simulates phones and tablets in your browser.
+
+![mobile view toggle](assets/devtools-mobile-toggle.png)
+
+### Viewport
 <!-- TODO:
 
 Explaining the viewport meta tag
@@ -542,6 +579,7 @@ In the `<head>`, make sure this tag is present:
 
 <!-- TODO: explain viewport -->
 
+<!-- TODO: explain px, em, rem, etc. -->
 <!-- TODO: explain -->
 Use relative units (em, %) in your styles and avoid fixed pixel widths when possible.
 
@@ -568,6 +606,8 @@ Now you can use icons like:
 ```
 {: .repl}
 
+<!-- TODO: box-shadow -->
+
 ## 8. Make Your Link Previews Stand Out
 
 <!-- TODO: make port public to use on metatags io. (does this work?) -->
@@ -589,9 +629,7 @@ To make your page look great when shared, use MetaTags.io to generate a preview 
 
 -->
 
-<!-- TODO: Create a new `style.css` file next to your HTML file. -->
-
-<!-- TODO
+<!-- TODO environment / directory
 
 https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Environment_setup/Dealing_with_files#what_structure_should_a_website_have
 
@@ -601,16 +639,14 @@ The root directory is where the main HTML files, such as index.html, are stored.
 
 /
 index.html
-images/
-styles/
-pages/
+assets/images/
+assets/styles/
 
 -->
 
-
 <!-- TODO
 
-add note on using variables in the :root pseudo class
+add note on using variables in the :root pseudo class to create global variables
 
 add aside on indents and formatting to improve readability 
 
@@ -621,13 +657,6 @@ In VS Code, use Cmd+Shift+P (Mac) or Ctrl+Shift+P (Windows), then search “Form
 
 <!-- TODO: refactoring
 
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-```
-Ensures the layout adjusts properly on mobile devices (very important for responsive design!).
-
-stylesheet 
-
 refactor and move to `styles/application.css`
 
 ```html
@@ -635,49 +664,11 @@ refactor and move to `styles/application.css`
 ```
 Connects your HTML to an external CSS file so you can style your page.
 
+TODO: empty cache hard reload + screenshot 
+
+do this after showing link stylesheet
+
 -->
-
-## Using Devtools
-
-### View Page Source
-
-In Chrome, right-click anywhere on a webpage and choose `View Page Source`. This helps you learn how other websites are built!
-
-<video src="assets/view-page-source.mp4" autoplay loop muted playsinline></video>
-
-Keyboard Shortcut:
-
-- Ctrl + U (Windows)
-- Command ⌘ + Option ⌥ + U (Mac)
-
-### Inspector
-
-In Chrome, right-click anywhere on a webpage and choose `Inspect`. This allows you to click on any element and see the code.
-
-<video src="assets/inspector.mp4" autoplay loop muted playsinline></video>
-  
-Keyboard Shortcut:
-
-- Ctrl + I (Windows)
-- Command ⌘ + Option ⌥ + I (Mac)
-
-### Toggle Device Toolbar
-
-To preview how your site looks on different screen sizes:
-
-- Right-click your site → **Inspect**
-- Click the **Toggle device toolbar** icon
-
-Keyboard Shortcut:
-
-- Ctrl + Shift + M (Windows)
-- Command ⌘ + Shift + M (Mac)
-
-This simulates phones and tablets in your browser.
-
-![mobile view toggle](assets/devtools-mobile-toggle.png)
-
-<!-- TODO: empty cache hard reload + screenshot -->
 
 ## Validate Your HTML
 
