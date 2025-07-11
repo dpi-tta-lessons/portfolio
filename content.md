@@ -388,7 +388,7 @@ To visualize layout areas during development, add this to your CSS:
 ```
 {: .repl }
 
-Add this debug border while building out layouts. You can remove this style rule later once the layout looks good.
+Add this debug border while building out layouts. You can remove this style rule later once you're happy with the layout.
 
 ![debug border portfolio](assets/debug-border-example.png)
 
@@ -401,20 +401,60 @@ hmmm... can we do that later since we're using <style> tags?
 
 ### Base Styles
 
+Let's add some base styles. We'll target the `body` selector so these styles are applied to all visible elements on the page.
+
 ```css
 /* ========== base ========== */
 
 body {
   margin: auto;
-  padding: var(--space-medium);
-  max-width: var(--layout-max-width);
+  padding: 2rem;
+  max-width: 640px;
   box-sizing: border-box;
-  font-family: 'Roboto', 'Sans-Serif';
 }
 ```
 
+Let's break this down:
+
+```css
+body {
+```
+
+Here we're targeting the `<body>` element of the HTML document. This sets global layout and typography styles for the whole page.
+
+```css
+margin: auto;
+```
+
+Centers the `<body>` horizontally in its container (only if a `width` or `max-width` is set). Common for centering fixed-width content. [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/margin)
+
+```css
+padding: 2rem;
+```
+
+Adds space inside the body (between the edge of the body and its content). `2rem` is 2 times the `root` element’s font size (often 32px if the base is 16px). Helps give content breathing room from the edge of the viewport. [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/padding)
+
+```css
+max-width: 640px;
+```
+
+Restricts the body’s width to no more than `640px`, even on large screens. Prevents content from becoming too wide and hard to read. Works with `margin: auto;` to center the content block. [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width)
+
+```css
+box-sizing: border-box;
+```
+
+Changes how width and height are calculated: padding and border are included in the total width/height. Makes layout easier to manage because dimensions behave more intuitively. [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
+
+### Using the Dev Tools Elements Panel
+
+Use the dev tools elements panel to select the `<body>` element. You'll see all the styles being applied to this element in the styles panel. You can toggle each style individually to see its effect on the layout in realtime.
+
+<video src="assets/toggle-styles-inspector.mp4" autoplay loop muted playsinline></video>
+
+<!-- TODO: explain px, em, rem, etc. -->
+
 <!-- TODO: fonts -->
-<!-- TODO: margin / padding -->
 
 ### Avatar
 
@@ -509,6 +549,8 @@ pages/
 
 
 <!-- TODO
+
+add note on using variables in the :root pseudo class
 
 add aside on indents and formatting to improve readability 
 
