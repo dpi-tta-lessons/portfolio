@@ -6,7 +6,7 @@ Create a personal portfolio webpage to showcase your work and make it easy for o
 
 In this lesson, you'll build a mobile-friendly portfolio website using HTML and CSS inside a GitHub Codespace.
 
-<video style="max-width: 375px" src="assets/portfolio-pwa.mp4" autoplay loop muted playsinline></video>
+<video class="portrait" src="assets/portfolio-pwa.mp4" autoplay loop muted playsinline></video>
 
 <!-- TODO: swap out my personal portfolio link for a generic stand in? -->
 Check out this example for yourself [heratyian.github.io](https://heratyian.github.io) and use it as a target. Use the [dev toolbar inspector](#inspector) to see the code for yourself.
@@ -331,14 +331,6 @@ Now that you have your HTML layout in place, let's start styling it. Let's start
 ```
 {: .copyable }
 
-<!-- TODO: fonts -->
-
-<!-- TODO: margin / padding -->
-
-<!-- TODO: avatar image -->
-
-<!-- TODO: text-align: center -->
-
 <!--
 TODO: maybe put this in a css reference?
 
@@ -372,7 +364,6 @@ box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 ```
 -->
 
-<!-- TODO: move to styles section -->
 ### Add a Debug Border
 
 To visualize layout areas during development, add this to your CSS:
@@ -397,11 +388,39 @@ To visualize layout areas during development, add this to your CSS:
 ```
 {: .repl }
 
-Add `<style>` tags with this debug border to your `<head>` while building out the layout. You can remove this style rule later once the layout looks good.
+Add this debug border while building out layouts. You can remove this style rule later once the layout looks good.
 
 ![debug border portfolio](assets/debug-border-example.png)
 
+<!-- 
+TODO: empy cache and hard reload instructions 
 
+
+hmmm... can we do that later since we're using <style> tags?
+-->
+
+### Base Styles
+
+```css
+/* ========== base ========== */
+
+body {
+  margin: auto;
+  padding: var(--space-medium);
+  max-width: var(--layout-max-width);
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Sans-Serif';
+}
+```
+
+<!-- TODO: fonts -->
+<!-- TODO: margin / padding -->
+
+### Avatar
+
+<!-- TODO: avatar image -->
+
+<!-- TODO: text-align: center -->
 
 ## 6. Make It Responsive
 
