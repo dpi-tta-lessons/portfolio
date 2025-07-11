@@ -678,6 +678,8 @@ Use the [W3C Validator](https://validator.w3.org/) to check your code for mistak
 
 <!-- TODO: add how to format document in vs code -->
 
+<!-- TODO: pwa setup -->
+
 ## What’s Next?
 
 You now have a static site ready to deploy!
