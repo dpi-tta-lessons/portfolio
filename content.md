@@ -676,7 +676,6 @@ Use the [W3C Validator](https://validator.w3.org/) to check your code for mistak
 
 <!-- TODO: add screenshot -->
 
-
 <!-- TODO: add how to format document in vs code -->
 
 ## What’s Next?
