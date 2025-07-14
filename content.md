@@ -547,7 +547,51 @@ You can adjust <code>width:</code> and <code>height:</code> to make the avatar l
 
 Once added, your avatar should appear centered and neatly cropped into a circle.
 
-<!-- TODO: box-shadow, :hover, :focus -->
+### Add Interactivity with :hover and :focus
+
+CSS pseudo-classes like `:hover` and `:focus` allow you to style elements in response to user interaction. These styles help your site feel more interactive and accessible.
+
+#### Example: Adding a box-shadow on hover
+
+```html
+<style>
+  a:hover {
+    box-shadow: 4px 4px gray;
+    transform: translate(-2px, -2px);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+</style>
+
+<a href="google.com">Link with box-shadow on hover</a>
+```
+{: .copyable }
+
+What this does:
+
+- `:hover`: Applies styles when the user hovers their mouse over the element. [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover)
+- `box-shadow`: Adds a subtle drop shadow to make the element "pop". [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
+- `transform`: Slightly shifts the element’s position to add depth. [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
+- `transition`: Smoothly animates the change so it feels polished. [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transition)
+
+### Making It Keyboard-Friendly with :focus
+
+```html
+<style>
+  a:focus {
+    outline: 3px solid blue;
+  }
+</style>
+
+<a href="google.com">Link with outine on focus</a>
+```
+{: .copyable }
+
+- `:focus`: Applies styles when the element is focused (like when tabbed to via keyboard). [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus)
+- `outline`: Helps keyboard users see where they are on the page. [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/outline)
+
+<aside class="tip">
+  Using both <code>:hover</code> and <code>:focus</code> ensures your site works for both mouse and keyboard users. This is a key part of accessibility.
+</aside>
 
 ## 6. Make It Responsive
 
