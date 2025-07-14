@@ -501,7 +501,7 @@ Let’s style your avatar image so it appears centered, circular, and neatly siz
 Add the image to your HTML and give it a descriptive `alt` and a `class` of avatar:
 
 ```html
-<img src="assets/images/avatar.png" alt="Portrait of ..." class="avatar">
+<img src="assets/avatar.png" alt="Portrait of ..." class="avatar">
 ```
 {: .repl }
 
@@ -526,7 +526,7 @@ Inside your `<style>` block, add this CSS:
   }
 </style>
 
-<img class="avatar" src="https://http.cat/200" alt="http.cat 200">
+<img class="avatar" src="assets/avatar.png" alt="avatar">
 ```
 {: .repl }
 
