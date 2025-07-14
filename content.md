@@ -708,7 +708,7 @@ Here’s how to do that with a media query:
 
 This tells the browser:
 
-"When the viewport is at least `992px` wide, increase the `max-width` of the `<body>` to 720px."
+> "When the viewport is at least `992px` wide, increase the `max-width` of the `<body>` to 720px."
 
 <video src="assets/media-query-max-width.mp4" autoplay loop muted playsinline></video>
 
