@@ -817,23 +817,6 @@ or when your site appears in a Google search:
 
 This small step makes your portfolio feel more professional and links more clickable.
 
-add note on using variables in the :root pseudo class to create global variables
-
-add aside on indents and formatting to improve readability 
-
-In VS Code, use Cmd+Shift+P (Mac) or Ctrl+Shift+P (Windows), then search “Format Document” to clean up your HTML or CSS automatically.
-
-refactor and move to `styles/application.css`
-
-```html
-<link rel="stylesheet" href="styles/application.css">
-```
-Connects your HTML to an external CSS file so you can style your page.
-
-TODO: how empty cache hard reload in chrome + screenshot  after showing link stylesheet
-
--->
-
 ## 9. Refactor Your Code
 
 As your portfolio grows, it's important to keep your code organized and maintainable. This is where refactoring comes in.
