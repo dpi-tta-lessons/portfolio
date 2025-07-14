@@ -315,10 +315,9 @@ Here are some more HTML elements that may come in handy while building out your 
 
 Your website should start looking something like our [target](heratyian.github.io) (replacing all the placeholder images, links, and text with your own content).
 
-<!-- TODO: encourage students to use devtools to debug and see other sites -->
 ## Using Devtools
 
-Now that you're a developer, you should familiarize yourself with the developer tools built in to web browsers like Chrome.
+Now that you're a developer, you should familiarize yourself with the developer tools built in to web browsers like Chrome. Use these developer tools to open up and inspect (and learn from) the websites you use in your life. This is a great way to learn!
 
 ### View Page Source
 
