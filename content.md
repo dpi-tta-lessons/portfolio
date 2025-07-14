@@ -180,7 +180,6 @@ Let's add our avatar image. Let's create a folder for our images. It's a common 
 <!-- TODO: show drag and drop into codespace -->
 <!-- show final view of codespace with image -->
 
-<!-- TODO: adding images / assets -->
 <aside class="tip">
   Use all lowercase kebab-case for filenames (eg my-avatar.jpg) to avoid broken links and stay consistent across platforms. Even though filename casing does not affect functionality, it's a good practice to follow a convention and be consistent. Also, casing becomes very important in some languages.
 </aside>
@@ -786,7 +785,95 @@ Add these blocks to your `<style>` and use Chrome’s device toolbar to preview 
 These are just conventions. Pick breakpoints that match your content, not specific devices.
 </aside>
 
-<!-- TODO: pwa setup? -->
+### Make It a PWA (Progressive Web App)
+
+A Progressive Web App (PWA) is a website that behaves like a native app on your phone [MDN](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps). [whatpwacando.today](https://whatpwacando.today/) is a great resource to explore what is possible with progressive web apps today.
+
+<aside class="tip">
+  Many websites have built in PWA support. (including GitHub Codespaces!)
+</aside>
+
+Once installed, it can:
+
+- Work offline (with caching)
+- Launch from your home screen
+- Load quickly, even on slow networks
+- Feel app-like with smooth transitions and no browser chrome
+
+This is a great bonus feature for your portfolio and an impressive detail for your resume.
+
+#### Key Ingredients
+
+To turn your portfolio into a PWA, you'll need three things:
+
+- `manifest.json`: A small file that describes your app (name, icon, theme color, etc.)
+- A service worker: Optional for now, this adds offline support.
+- Proper meta/link tags in your `<head>`.
+
+#### Step 1: Add a manifest.json
+
+Create a `manifest.json` file in the root of your project:
+
+```json
+{
+  "name": "My Portfolio",
+  "short_name": "Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#194341",
+  "icons": [
+    {
+      "src": "/assets/images/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+```
+
+<aside class="warning">
+  If you set <code>"display": "standalone"</code>, your app will no longer have the url bar when opened as a pwa. This can make site navigation difficult for users.
+</aside>
+
+#### Step 2: Link to Your Manifest in `head`
+
+Inside your `<head>` tag:
+
+```html
+<link rel="manifest" href="manifest.json">
+```
+{: .copyable }
+
+<aside class="tip">
+The theme color is the background color used when your app is launched from the home screen.
+</aside>
+
+#### Step 3: Add Icons
+
+Make sure you include app icons in your `assets/images` folder:
+
+- `favicon-192.png`
+- `favicon-512.png`
+
+You can generate these with [RealFaviconGenerator](https://realfavicongenerator.net/) or [Favicon.io](https://favicon.io/).
+
+#### Install Your PWA
+
+##### Desktop
+
+![install pwa chrome](assets/pwa-install-on-desktop.png)
+
+##### iOS
+
+<img src="assets/pwa-ios-install-1.png" alt="install pwa ios 1" width="300px">
+<img src="assets/pwa-ios-install-2.png" alt="install pwa ios 2" width="300px">
+<img src="assets/pwa-ios-install-3.png" alt="install pwa ios 3" width="300px">
 
 ## 7. Use Font Awesome Icons
 
