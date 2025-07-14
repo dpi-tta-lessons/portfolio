@@ -780,6 +780,10 @@ Meta tags don’t change how your page looks in the browser, but they do affect 
 - Go to [MetaTags.io](https://metatags.io)
 - Enter your site's URL (or forwarded address)
 
+<aside class="warning">
+If you're working in a Codespace, your preview will not be visible to MetaTags.io until you <a href="/lessons/github-codespaces-vscode#4-start-a-local-server" targe="_blank">make the port public</a>.
+</aside>
+
 ### Step 2: Paste Into Your `head`
 
 Add these meta tags into your `<head>` section:
@@ -794,10 +798,6 @@ Add these meta tags into your `<head>` section:
 {: .copyable }
 
 The `og:` prefix stands for [Open Graph](https://ogp.me/), a standard created by Facebook and supported by many platforms.
-
-<aside class="warning">
-If you're working in a Codespace, your preview will not be visible to MetaTags.io until you <a href="/lessons/github-codespaces-vscode#4-start-a-local-server" targe="_blank">make the port public</a>.
-</aside>
 
 ### Examples
 
