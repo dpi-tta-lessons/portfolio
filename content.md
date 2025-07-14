@@ -714,7 +714,7 @@ This tells the browser:
 
 #### Try It Yourself
 
-Add both of these blocks to your `<style>` and use Chrome’s device toolbar to preview how the layout changes at different breakpoints.
+Add these blocks to your `<style>` and use Chrome’s device toolbar to preview how the layout changes at different breakpoints.
 
 ##### Common Breakpoints
 
@@ -763,37 +763,61 @@ Now you can use icons like:
 
 ## 8. Make Your Link Previews Stand Out
 
-<!-- TODO: make port public to use on metatags io. (does this work?) -->
+When someone shares your site on messaging apps or platforms like Google, LinkedIn and Discord, you want it to look great: with a title, image, and description.
 
-To make your page look great when shared, use MetaTags.io to generate a preview and copy the meta tags into your HTML.
+![imessage link preview](assets/imessage-link-preview.jpeg)
+
+This is where meta tags come in. Meta tags are bits of metadata you add to the `<head>` of your HTML file. They tell platforms how to display your link preview.
+
+You can use [MetaTags.io](https://metatags.io) to generate a live preview and copy the right code into your site.
 
 <aside class="tip">
-  Meta tags help social platforms like LinkedIn or Twitter show a nice preview when someone shares your link.
+Meta tags don’t change how your page looks in the browser, but they do affect how your link appears when shared on social media.
 </aside>
 
-<!-- TODO: add screenshot -->
+### Step 1: Generate a Preview
 
-<!-- TOOD: add practical meta tag examples 
+- Go to [MetaTags.io](https://metatags.io)
+- Enter your site's URL (or forwarded address)
 
-<meta property="og:title" content="Ian Heraty's Portfolio">
-<meta property="og:image" content="/assets/avatar.jpg">
-<meta property="og:description" content="Software Development Educator and Mentor">
+### Step 2: Paste Into Your `head`
+
+Add these meta tags into your `<head>` section:
+
+```html
+<!-- Link preview meta tags -->
+<meta property="og:title" content="My Portfolio">
+<meta property="og:description" content="This is a portfolio page for all my projects.">
+<meta property="og:image" content="/assets/images/avatar.png">
 <meta property="og:url" content="https://yourdomain.com">
+```
+{: .copyable }
 
--->
+The `og:` prefix stands for [Open Graph](https://ogp.me/), a standard created by Facebook and supported by many platforms.
 
-<!-- TODO
+<aside class="warning">
+If you're working in a Codespace, your preview will not be visible to MetaTags.io until you <a href="/lessons/github-codespaces-vscode#4-start-a-local-server" targe="_blank">make the port public</a>.
+</aside>
 
-add note on using variables in the :root pseudo class to create global variables
+### Examples
+
+Here’s how these tags would render when someone pastes your link into Discord or LinkedIn:
+
+![linkedin preview](assets/linkedin-preview.png)
+
+or when your site appears in a Google search:
+
+![google preview](assets/google-preview.png)
+
+This small step makes your portfolio feel more professional and links more clickable.
+
+<!-- TODO: add note on using variables in the :root pseudo class to create global variables -->
+
+<!-- TODO: refactoring
 
 add aside on indents and formatting to improve readability 
 
-maybe do this in a subsequent "code review" lesson?
-
 In VS Code, use Cmd+Shift+P (Mac) or Ctrl+Shift+P (Windows), then search “Format Document” to clean up your HTML or CSS automatically.
--->
-
-<!-- TODO: refactoring
 
 refactor and move to `styles/application.css`
 
