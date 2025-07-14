@@ -513,24 +513,29 @@ Use all lowercase, kebab-case for filenames (like <code>avatar.png</code>) to av
 
 Inside your `<style>` block, add this CSS:
 
-```css
-.avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  object-fit: cover;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+```html
+<style>
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
+<img class="avatar" src="https://http.cat/200" alt="http.cat 200">
 ```
-{: .copyable }
+{: .repl }
 
 Why This Works:
 
-- `border-radius: 100%`: Rounds the image into a perfect circle.
-- `object-fit: cover`: Ensures the image fills its box without distortion.
-- `display: block` + `margin-left: auto` / `margin-right: auto`: Horizontally centers the image.
+- `border-radius: 100%`: Rounds the image into a perfect circle. [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
+- `object-fit: cover`: Ensures the image fills its box without distortion. [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit#cover)
+- `display: block`: The element generates a block box, generating line breaks both before and after the element when in the normal flow. [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/display#block)
+- `margin-left: auto` / `margin-right: auto`: Horizontally centers the image. [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/margin)
 
 <aside class="tip">
 You can adjust <code>width:</code> and <code>height:</code> to make the avatar larger or smaller in one place.
