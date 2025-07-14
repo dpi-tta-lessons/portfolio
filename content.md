@@ -765,7 +765,7 @@ Now you can use icons like:
 
 When someone shares your site on messaging apps or platforms like Google, LinkedIn and Discord, you want it to look great: with a title, image, and description.
 
-![imessage link preview](assets/imessage-link-preview.jpeg)
+<img src="assets/imessage-link-preview.jpeg" alt="imessage link preview" width="300px">
 
 This is where meta tags come in. Meta tags are bits of metadata you add to the `<head>` of your HTML file. They tell platforms how to display your link preview.
 
