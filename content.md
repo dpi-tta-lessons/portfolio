@@ -691,7 +691,7 @@ body {
   max-width: 640px;
 }
 ```
-{ .copyable }
+{: .copyable }
 
 This sets a max width for small to medium screens. But on larger screens, like laptops or desktops, you might want a little more space.
 
