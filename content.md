@@ -154,9 +154,10 @@ Remember, [every element in HTML is treated like a box](/lessons/html-css-basics
 
 <!-- don't give away everything. encourage students to use the inspector and figure out how to build it -->
 
-Add this basic structure to your body, replacing the `<!-- Your content goes here -->` comment. It's a good practice to use comments to document your code and add `TODO`s. You wont see anything when you run this repl because comments are invisible to users.
+Add this basic structure to your body, replacing the `<!-- Your content goes here -->` comment. It's a good practice to use comments to document your code and add `TODO`s.
 
 ```html
+<!-- NOTE: You wont see anything when you run this repl because comments are invisible to users. -->
 <!-- TODO: avatar -->
 <!-- TODO: headline -->
 <!-- TODO: tagline -->
@@ -166,7 +167,11 @@ Add this basic structure to your body, replacing the `<!-- Your content goes her
 ```
 {: .repl }
 
-<!-- TODO: show gif of shortcut to add comments cmd + '/' -->
+<aside class="tip">
+  Use the cmd + '/' shortcut to toggle comments in your code.
+
+  <video src="assets/comment-shortcut.mp4" autoplay loop muted playsinline></video>
+</aside>
 
 ### Adding an Avatar Image
 
