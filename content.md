@@ -545,7 +545,9 @@ Once added, your avatar should appear centered and neatly cropped into a circle.
 
 ## 6. Make It Responsive
 
-Most people will view your site on their phones. Responsive design ensures it looks great on all screen sizes.
+Most people will visit your site on a phone or tablet. That's why modern web design follows a "mobile-first" approach: starting with smaller screens and scaling up from there. This ensures your site stays functional, fast, and easy to use on any device.
+
+Chrome-based browsers include built-in tools to preview how your site looks across different screen sizes.
 
 ### Toggle Device Toolbar
 
@@ -559,21 +561,17 @@ Keyboard Shortcut:
 - Ctrl + Shift + M (Windows)
 - Command ⌘ + Shift + M (Mac)
 
-This simulates phones and tablets in your browser.
+This simulates phones, tablets, and other devices in your browser.
 
-![mobile view toggle](assets/devtools-mobile-toggle.png)
+<video src="assets/toggle-device-toolbar.mp4" autoplay loop muted playsinline></video>
 
 ### Viewport
-<!-- TODO:
 
-Explaining the viewport meta tag
-Avoiding fixed widths (width: 500px) in favor of percentages or max-width
+Without a viewport meta tag, mobile browsers default to rendering your page as if it were designed for a desktop screen. This usually results in your site looking zoomed out and unreadable on small devices.
 
-- also @media-query
+<video src="assets/viewport.mp4" autoplay loop muted playsinline>
 
-- demo chrome device toolbar
-
--->
+To fix this, you need to explicitly set the viewport so your layout adapts to the screen size.
 
 In the `<head>`, make sure this tag is present:
 
@@ -582,11 +580,159 @@ In the `<head>`, make sure this tag is present:
 ```
 {: .copyable }
 
-<!-- TODO: explain viewport -->
+#### What This Does
 
-<!-- TODO: explain px, em, rem, etc. -->
-<!-- TODO: explain -->
-Use relative units (em, %) in your styles and avoid fixed pixel widths when possible.
+- `width=device-width`: Sets the viewport to match the screen’s width.
+- `initial-scale=1.0`: Sets the default zoom level when the page loads.
+- This tells the browser: "Display this page at full width on whatever device you're using."
+
+<aside class="tip">
+Without this tag, even well-written responsive CSS won’t work properly on mobile.
+</aside>
+
+You’ll notice that after adding the viewport meta tag, your layout stops being tiny on mobile: text sizes normalize, widths respond, and users don’t have to pinch-zoom.
+
+#### Use Flexible Layouts
+
+In addition to setting the viewport, avoid using fixed pixel widths like width: `500px` in your CSS. Instead, prefer:
+
+- `max-width`: allows elements to shrink on small screens
+- `width: 100%`: lets content scale with the container
+- `rem`, `%`, or `em`: relative units that scale more gracefully
+
+```css
+img {
+  width: 100%;
+  max-width: 150px;
+}
+```
+{: .copyable }
+
+<aside class="warning">
+A fixed width like <code>width: 500px;</code> may look fine on desktop, but will overflow on smaller screens.
+</aside>
+
+### Understanding CSS Units: px, em, rem, and %
+
+When writing styles, you’ll need to choose how to size things: text, spacing, widths, images, and more. The unit you use affects how responsive and flexible your layout is.
+
+#### `px` – Pixels (Absolute Unit)
+
+A pixel is a fixed-size unit. `20px` means exactly 20 screen pixels. It's predictable but not responsive.
+
+```css
+h1 {
+  font-size: 32px;
+}
+```
+
+<aside class="warning">
+Using only `px` can make your site harder to scale or adjust for different screen sizes or accessibility needs.
+</aside>
+
+#### `em` – Relative to Parent Font Size
+
+`1em` equals the font size of the parent element. It scales based on nesting.
+
+```css
+p {
+  font-size: 1em;   /* same size as parent */
+}
+li {
+  padding-left: 2em;  /* 2x the parent font size */
+}
+```
+
+<aside class="tip">
+Useful for spacing that adapts with font size—but can compound if you’re not careful with nesting.
+</aside>
+
+#### `rem` – Relative to Root Font Size
+
+`1rem` equals the root element's font size (usually `16px` by default). It’s more consistent than `em`.
+
+```css
+body {
+  font-size: 1rem;  /* usually 16px */
+}
+h1 {
+  font-size: 2rem;  /* 32px */
+}
+```
+
+<aside class="tip">
+Use <code>rem</code> for sizing that stays consistent across your site.
+</aside>
+
+#### `%` – Percentage
+
+A percentage is relative to the size of the parent element.
+
+```css
+img {
+  width: 100%; /* fills the container */
+}
+```
+
+Useful for layouts that need to stretch or shrink based on the screen or container size.
+
+#### Best Practices
+
+Use relative units like `rem`, `em`, and `%` for responsive, accessible designs. Avoid relying solely on `px`, especially for fonts and layout widths.
+
+### Make Your Styles Adapt to Screen Size
+
+Media queries let you apply CSS only when certain conditions are true: like when the screen is wider than a certain size. They're the backbone of responsive design.
+
+Let’s say you want your content to be slightly wider on large screens.
+
+```css
+body {
+  max-width: 640px;
+}
+```
+{ .copyable }
+
+This sets a max width for small to medium screens. But on larger screens, like laptops or desktops, you might want a little more space.
+
+Here’s how to do that with a media query:
+
+```css
+@media (min-width: 992px) {
+  body {
+    max-width: 720px;
+  }
+}
+```
+{: .copyable }
+
+This tells the browser:
+
+"When the viewport is at least `992px` wide, increase the `max-width` of the `<body>` to 720px."
+
+#### Try It Yourself
+
+Add both of these blocks to your `<style>` and use Chrome’s device toolbar to preview how the layout changes at different breakpoints.
+
+##### Common Breakpoints
+
+```css
+/* Small phones */
+@media (max-width: 576px) { ... }
+
+/* Tablets */
+@media (min-width: 768px) { ... }
+
+/* Desktops */
+@media (min-width: 992px) { ... }
+
+/* Large screens */
+@media (min-width: 1200px) { ... }
+```
+
+<aside class="tip">
+These are just conventions. Pick breakpoints that match your content, not specific devices.
+</aside>
 
 ## 7. Use Font Awesome Icons
 
@@ -609,9 +755,9 @@ Now you can use icons like:
 
 <i class="fab fa-github"></i> GitHub
 ```
-{: .repl}
+{: .repl }
 
-<!-- TODO: box-shadow -->
+<!-- TODO: box-shadow, :hover, :focus -->
 
 ## 8. Make Your Link Previews Stand Out
 
