@@ -710,6 +710,8 @@ This tells the browser:
 
 "When the viewport is at least `992px` wide, increase the `max-width` of the `<body>` to 720px."
 
+<video src="assets/media-query-max-width.mp4" autoplay loop muted playsinline>
+
 #### Try It Yourself
 
 Add both of these blocks to your `<style>` and use Chrome’s device toolbar to preview how the layout changes at different breakpoints.
@@ -777,21 +779,6 @@ To make your page look great when shared, use MetaTags.io to generate a preview 
 <meta property="og:image" content="/assets/avatar.jpg">
 <meta property="og:description" content="Software Development Educator and Mentor">
 <meta property="og:url" content="https://yourdomain.com">
-
--->
-
-<!-- TODO environment / directory
-
-https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Environment_setup/Dealing_with_files#what_structure_should_a_website_have
-
-The root directory is where the main HTML files, such as index.html, are stored.
- Additionally, it is common to have a dedicated folder for static assets like images, stylesheets, and JavaScript files.
- This helps keep the project organized and makes it easier to manage and scale the website as it grows. For a basic static website, having all HTML pages in the same root directory might work, but as the site becomes more complex, organizing pages into subdirectories can improve manageability.
-
-/
-index.html
-assets/images/
-assets/styles/
 
 -->
 
