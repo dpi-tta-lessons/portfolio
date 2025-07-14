@@ -569,7 +569,7 @@ This simulates phones, tablets, and other devices in your browser.
 
 Without a viewport meta tag, mobile browsers default to rendering your page as if it were designed for a desktop screen. This usually results in your site looking zoomed out and unreadable on small devices.
 
-<video src="assets/viewport.mp4" autoplay loop muted playsinline>
+<video src="assets/viewport.mp4" autoplay loop muted playsinline></video>
 
 To fix this, you need to explicitly set the viewport so your layout adapts to the screen size.
 
@@ -710,7 +710,7 @@ This tells the browser:
 
 "When the viewport is at least `992px` wide, increase the `max-width` of the `<body>` to 720px."
 
-<video src="assets/media-query-max-width.mp4" autoplay loop muted playsinline>
+<video src="assets/media-query-max-width.mp4" autoplay loop muted playsinline></video>
 
 #### Try It Yourself
 
