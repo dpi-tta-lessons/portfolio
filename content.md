@@ -235,7 +235,7 @@ We'll use [the Paragraph element](https://developer.mozilla.org/en-US/docs/Web/H
 
 ### Icon Links
 
-We'll use [The Unordered List element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ul), `<ul>`, with the list item element, `<li>` for each link. For the link we'll use [the anchor element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a), `<a>`. 
+We'll use [The Unordered List element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ul), `<ul>`, with the list item element, `<li>` for each link. For the link we'll use [the anchor element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a), `<a>`.
 
 Why do we use the list element around each link?
 
@@ -543,6 +543,8 @@ You can adjust <code>width:</code> and <code>height:</code> to make the avatar l
 
 Once added, your avatar should appear centered and neatly cropped into a circle.
 
+<!-- TODO: box-shadow, :hover, :focus -->
+
 ## 6. Make It Responsive
 
 Most people will visit your site on a phone or tablet. That's why modern web design follows a "mobile-first" approach: starting with smaller screens and scaling up from there. This ensures your site stays functional, fast, and easy to use on any device.
@@ -736,6 +738,8 @@ Add these blocks to your `<style>` and use Chrome’s device toolbar to preview 
 These are just conventions. Pick breakpoints that match your content, not specific devices.
 </aside>
 
+<!-- TODO: pwa setup? -->
+
 ## 7. Use Font Awesome Icons
 
 Add this to your `<head>`:
@@ -758,8 +762,6 @@ Now you can use icons like:
 <i class="fab fa-github"></i> GitHub
 ```
 {: .repl }
-
-<!-- TODO: box-shadow, :hover, :focus -->
 
 ## 8. Make Your Link Previews Stand Out
 
@@ -811,9 +813,7 @@ or when your site appears in a Google search:
 
 This small step makes your portfolio feel more professional and links more clickable.
 
-<!-- TODO: add note on using variables in the :root pseudo class to create global variables -->
-
-<!-- TODO: refactoring
+add note on using variables in the :root pseudo class to create global variables
 
 add aside on indents and formatting to improve readability 
 
@@ -826,21 +826,90 @@ refactor and move to `styles/application.css`
 ```
 Connects your HTML to an external CSS file so you can style your page.
 
-TODO: empty cache hard reload + screenshot 
-
-do this after showing link stylesheet
+TODO: how empty cache hard reload in chrome + screenshot  after showing link stylesheet
 
 -->
 
-## Validate Your HTML
+## 9. Refactor Your Code
+
+As your portfolio grows, it's important to keep your code organized and maintainable. This is where refactoring comes in.
+
+### Extract Styles to a Separate File
+
+Instead of keeping all your CSS inside `<style>` tags, you can move it to an external stylesheet:
+
+![stylesheet path](assets/stylesheet-directory.png)
+
+- Create a new folder inside `assets` called `stylesheets`.
+- Inside that folder, create a file named application.css
+- Move your CSS code into this file
+
+Link to it in your HTML like this:
+
+```html
+<!-- Inside your <head> -->
+<link rel="stylesheet" href="assets/stylesheets/application.css">
+```
+{: .copyable }
+
+This keeps your HTML cleaner and separates structure (HTML) from style (CSS).
+
+### Clear Your Cache After Changes
+
+When linking a new CSS file, your browser may use a cached version and ignore your updates.
+
+To force reload the latest changes:
+
+- Chrome: Open DevTools → Right-click the refresh button → Empty Cache and Hard Reload
+
+![empty cache hard reload](assets/empty-cache-hard-reload.png)
+
+### Use CSS Variables for Reusability
+
+Define your color palette, sizes, and other values as CSS custom properties inside the `:root` pseudo-class:
+
+```css
+:root {
+  /* add more properties here with `--` prefix */
+  --avatar-size: 120px;
+}
+```
+
+Then use those variables throughout your CSS:
+
+```css
+.avatar {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 100%;
+}
+```
+
+<aside class="tip">
+Keeping design values in one place makes it easier to tweak your theme across the whole site.
+</aside>
+
+<aside class="warning">
+  <strong>Avoid "Magic Numbers"</strong><br>
+  A "magic number" is a hard-coded value with no clear meaning — like <code>padding: 37px;</code> or <code>margin-top: 123px;</code>. These can make your code harder to read and maintain.
+
+  Instead, use variables (like <code>--spacing-lg</code> or <code>--avatar-size</code>)
+
+  <br><br>
+  <strong>Why this matters:</strong> Magic numbers often need to be adjusted in multiple places. Using variables or relative units makes your layout more flexible and easier to update.
+</aside>
+
+### Format Your Code Automatically
+
+Properly indented code is easier to read and debug. Use your editor’s auto-formatting tools to make this easy:
+
+- VS Code: Press Cmd + Shift + P (Mac) or Ctrl + Shift + P (Windows), then search for "Format Document".
+
+![format document vs code](assets/format-document.png)
+
+### Validate Your HTML
 
 Use the [W3C Validator](https://validator.w3.org/) to check your code for mistakes. Paste your HTML code or upload the file to check for typos or unclosed tags. This can be a life saver when you can't figure out what's breaking your HTML.
-
-<!-- TODO: add screenshot -->
-
-<!-- TODO: add how to format document in vs code -->
-
-<!-- TODO: pwa setup -->
 
 ## What’s Next?
 
