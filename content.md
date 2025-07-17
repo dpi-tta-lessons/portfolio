@@ -71,6 +71,17 @@ Here's a complete basic layout:
 
 Replace your `<h1>Hello, world</h1>` with this layout in your `index.html` file. We'll add content to the body in the [next step](#4-build-the-page-layout).
 
+<aside class="tip">
+  <!-- TODO: add screenshot -->
+  Make sure to reload the browser page as you edit your code. 
+  
+  In Chrome use this shortcut to reload the page: 
+  <ul>
+    <li>⌘ + r (macOS)</li>
+    <li>ctrl + r (windows)</li>
+  </ul>
+</aside>
+
 ### What Each Line Does
 
 #### Doctype
